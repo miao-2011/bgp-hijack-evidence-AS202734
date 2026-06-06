@@ -1,0 +1,9 @@
+https://web.archive.org//web/20260523102605/https://bgp.tools/as/47778#connectivity
+https://web.archive.org//web/20260523125233/https://zerowolf.cn/bgp/
+https://web.archive.org//web/20260523125856/https://bgp.tools/as/210352#asinfo
+https://web.archive.org//web/20260523130054/https://bgp.tools/ixp/LoLi-IX%20-%20NGB
+https://web.archive.org//web/20260523130258/https://bgp.tools/ixp/AKIX%20-%20TFU
+https://web.archive.org//web/20260523130540/https://ren.moedove.com/
+https://web.archive.org/web/20260523043008/https://github.com/MoeDove-LLC/moegeo
+https://web.archive.org/web/20260602150721/https://tyo.cxix.net/lg/rs1-ipv6
+https://web.archive.org/web/20260602151023/https://tyo.cxix.net/api/v4/lg/rs1-ipv6/bgp-summary
