@@ -1,0 +1,145 @@
+Received: by 2002:ac8:6651:0:b0:516:d8b6:9509 with SMTP id j17csp756430qtp;
+        Fri, 22 May 2026 22:13:30 -0700 (PDT)
+Received: from i-ccg.cloudflare-email.net (i-ccg.cloudflare-email.net. [104.30.8.226])
+        by mx.google.com with ESMTPS id 6a1803df08f44-8cc81337171si56454716d6.407.2026.05.22.22.13.29
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2026 22:13:30 -0700 (PDT)
+Received: from lists.nanog.org (104.197.34.15)
+        by cloudflare-email.net (cloudflare) id OxQfobCVX0wk
+        for <me@haoziwan.xyz>; Sat, 23 May 2026 05:13:27 +0000
+Received: from lists.nanog.org (localhost [IPv6:::1])
+	by lists.nanog.org (Postfix) with ESMTP id 7E49C626FC;
+	Sat, 23 May 2026 05:13:11 +0000 (UTC)
+Received: from TYDPR03CU002.outbound.protection.outlook.com
+ (mail-japaneastazon11023141.outbound.protection.outlook.com [52.101.127.141])
+	by lists.nanog.org (Postfix) with ESMTPS id 2D7C7607B1
+	for <nanog@lists.nanog.org>; Sat, 23 May 2026 05:09:26 +0000 (UTC)
+Received: from SI2PR01MB3865.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:100::11) by TYNPR01MB8033.apcprd01.prod.exchangelabs.com
+ (2603:1096:405:3b3::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.48.17; Sat, 23 May
+ 2026 05:09:22 +0000
+Received: from SI2PR01MB3865.apcprd01.prod.exchangelabs.com
+ ([fe80::8b11:2e89:9fa4:b46]) by SI2PR01MB3865.apcprd01.prod.exchangelabs.com
+ ([fe80::8b11:2e89:9fa4:b46%4]) with mapi id 15.21.0025.023; Sat, 23 May 2026
+ 05:09:22 +0000
+From: =?utf-8?B?6Iy25qCXIHZpYSBOQU5PRw==?= <nanog@lists.nanog.org>
+To: "nanog@lists.nanog.org" <nanog@lists.nanog.org>
+CC: =?utf-8?B?6Iy25qCX?= <chariri@chariri.moe>
+Subject:
+	=?utf-8?B?UmU6IFtCR1AgSGlqYWNrXSBBUzIwMjczNCBoaWphY2tlZCBtdWx0aXBsZSBD?=
+ =?utf-8?B?aGluZXNlIENhcnJpZXJzIG9uIE1heSAxNi0xNyDigJMgRnVsbCBldmlkZW5j?=
+ =?utf-8?Q?e_and_attribution?=
+Thread-Topic:
+	=?utf-8?B?W0JHUCBIaWphY2tdIEFTMjAyNzM0IGhpamFja2VkIG11bHRpcGxlIENoaW5l?=
+ =?utf-8?B?c2UgQ2FycmllcnMgb24gTWF5IDE2LTE3IOKAkyBGdWxsIGV2aWRlbmNlIGFu?=
+ =?utf-8?Q?d_attribution?=
+Thread-Index: AWY2OTkwg3lOAw5IipzMB0MBJR2gwO1ociyA
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Sat, 23 May 2026 05:09:19 +0000
+Message-ID: <217f6bf9-552c-4b64-9b85-fe5763c99736@chariri.moe>
+References: <f95317e87d3464fb0e697c57250f017b@haoziwan.xyz>
+List-Help: <mailto:nanog-request@lists.nanog.org?subject=help>
+List-Subscribe: <mailto:nanog-join@lists.nanog.org>
+List-Unsubscribe: <mailto:nanog-leave@lists.nanog.org>
+In-Reply-To: <625da9f0fed7e9287439e541f66af3ff@haoziwan.xyz>
+Reply-To: North American Network Operators Group <nanog@lists.nanog.org>
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of nanog-bounces@lists.nanog.org
+ designates 104.197.34.15 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=104.197.34.15; envelope-from="nanog-bounces@lists.nanog.org";
+ helo=lists.nanog.org;
+x-ms-reactions: disallow
+x-ms-publictraffictype: Email
+x-clientproxiedby: TYCP286CA0275.JPNP286.PROD.OUTLOOK.COM
+ (2603:1096:400:3c9::17) To SI2PR01MB3865.apcprd01.prod.exchangelabs.com
+ (2603:1096:4:100::11)
+Content-Type: multipart/mixed;
+	boundary="_003_217f6bf9552c4b649b85fe5763c99736charirimoe_"
+MIME-Version: 1.0
+
+--_003_217f6bf9552c4b649b85fe5763c99736charirimoe_
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <5DD5D4C6C10AE546B8B39550ECED5E4A@1>
+Content-Transfer-Encoding: base64
+
+SGVsbG8sIFpob25nIE1pYW8gYW5kIG90aGVyIGNvbGxlYWd1ZXMgb24gdGhlIE5BTk9HIG1haWxp
+bmcgbGlzdCwNCg0KQXBvbG9naWVzIGZvciB0aGUgbGF0ZS1uaWdodCBtZXNzYWdlIGFuZCBmb3Ig
+YWRkaW5nIG91dC1vZi1yZWdpb24gbm9pc2UgDQp0byB0aGUgbWFpbGluZyBsaXN0LCBidXQgSSBm
+ZWVsIGNvbXBlbGxlZCB0byBzaGFyZSBzb21lIGNvbnRleHQgDQpyZWdhcmRpbmcgdGhpcyBzaXR1
+YXRpb24uDQoNClJlZ2FyZGluZyB0aGUgcm91dGUgbGVhayBpdHNlbGY6DQoNCiAxLiBJdCBpcyBx
+dWl0ZSBjb21tb24gZm9yIG5ldHdvcmtzIHdpdGggcHJlZG9taW5hbnRseSBDaGluZXNlLXNwZWFr
+aW5nDQogICAgb3BlcmF0b3JzIG9yIGN1c3RvbWVycyB0byBvcHRpbWl6ZSB0cmFmZmljIHRvIGFu
+ZCBmcm9tIENoaW5lc2UNCiAgICBuZXR3b3JrcyAoc3VjaCBhcyBDVSwgQ1QsIGFuZCBDTSkuIFRo
+aXMgaXMgb2Z0ZW4gYWNoaWV2ZWQgYnkNCiAgICBtYW51YWxseSBzcGVjaWZ5aW5nIGNvbW1vbiBD
+aGluZXNlIElQIHByZWZpeGVzIGFuZCBhcHBseWluZyByb3V0aW5nDQogICAgcG9saWNpZXMgbGlr
+ZSBCR1AgY29tbXVuaXRpZXMgYW5kIGNvbGQtcG90YXRvIHJvdXRpbmcuDQogMi4gRHVyaW5nIGNv
+bmZpZ3VyYXRpb24sIHRoZSBvcGVyYXRvciBvZiBBUzIwMjczNCBtYWRlIGFuIGVycm9yLA0KICAg
+IGluYWR2ZXJ0ZW50bHkgYXBwbHlpbmcgc3BlY2lmaWMgQkdQIGNvbW11bml0aWVzIHRvIDQsNjIy
+IHJvdXRlcy4NCiAgICBXaGlsZSB0aGVzZSByb3V0ZXMgd2VyZSBzdWNjZXNzZnVsbHkgZmlsdGVy
+ZWQgb3V0IGJlZm9yZSBiZWluZw0KICAgIGV4cG9ydGVkIHRvIHVwc3RyZWFtcywgdGhleSB1bmZv
+cnR1bmF0ZWx5IGxlYWtlZCB0byBIRSByb3V0ZSBjb2xsZWN0b3JzLg0KIDMuIFRoZSBCSVJEMyBj
+b25maWd1cmF0aW9uIGZvciBBUzIwMjczNCBpcyBwdWJsaWNseSBhdmFpbGFibGUgb24NCiAgICBH
+aXRIdWIsIHdoaWNoIGVmZmVjdGl2ZWx5IGludmFsaWRhdGVzIHRoZSByZXBvcnQncyBpbXBsaWNh
+dGlvbiBvZiBhDQogICAgbWFsaWNpb3VzIGhpamFjayAod2hpY2ggaW4gdHVybiwgYXBwZWFycyB0
+byBiZSBhbiBhY2N1c2F0aW9uIHRoYXQNCiAgICBib3JkZXJzIG9uIGRlZmFtYXRpb24pLiBGdXJ0
+aGVybW9yZSwgdGhlIG9wZXJhdG9yIGhhcyBwcm92aWRlZCBhDQogICAgZGV0YWlsZWQgcG9zdC1t
+b3J0ZW0gb2YgdGhlIGxlYWsgb24gdGhlIGxpc3QuDQoNClJlZ2FyZGluZyB0aGUgcmVwb3J0cywN
+Cg0KSXQgbWlnaHQgYmVob292ZSBjZXJ0YWluIGluZGl2aWR1YWxzIHRvIGFjcXVpcmUgYSBmdW5k
+YW1lbnRhbCBncmFzcCBvZiANCkJHUCBhbmQgcm91dGUgdmlzaWJpbGl0eSBiZWZvcmUgY2x1dHRl
+cmluZyB0aGUgTkFOT0cgbGlzdCB3aXRoIA0KbG93LWVmZm9ydCwgQUktZ2VuZXJhdGVkIGRyaXZl
+bCAoZXZlbiBub3QgZm9ybWF0dGVkIHByb3Blcmx5IGFuZCB3aXRoIA0KbGVmdCBvdmVyIE1hcmtk
+b3duISkgYW5kIHJ1c2hpbmcgdG8gY2xhaW0gdG8gYmUgIkluZGVwZW5kZW50IFNlY3VyaXR5IA0K
+UmVzZWFyY2hlcnMiLiBGdXJ0aGVybW9yZSwgc2Vhc29uZWQgb3BlcmF0b3JzIGdlbmVyYWxseSBo
+YXZlIHRoZSBiYXNpYyANCmNvbXBldGVuY2UgdG8gZGlzdGluZ3Vpc2ggYmV0d2VlbiBhIG11bmRh
+bmUgY29uZmlndXJhdGlvbiBlcnJvciBvbiBhIA0KcGVyc29uYWwgQVNOIGFuZCBhIG1hbGljaW91
+cyByb3V0ZSBoaWphY2suIEkgbXVzdCBwb2ludCBvdXQgdGhhdCwgDQpjaG9vc2luZyB0byBkZWxp
+YmVyYXRlbHkgY29uZmxhdGUgdGhlIHR3byBpbiBvcmRlciB0byBsYXVuY2ggYSANCnJlYWwtd29y
+bGQgaGFyYXNzbWVudCBjYW1wYWlnbiAoZXNwZWNpYWxseSwgaW5jbHVkaW5nIHRoZSBkZWVwbHkg
+DQpkaXN0dXJiaW5nIHN0ZXAgb2YgZHJhZ2dpbmcgdGhlIGVtcGxveWVyIGFuZCB0aGUgYWNhZGVt
+aWMgc3VwZXJ2aXNvciBvZiANCnRoZSBvcGVyYXRvciBvZiBBUzIwMjczNCBpbnRvIHRoZSBmcmF5
+KSBzcGVha3Mgdm9sdW1lcy4NCg0KSSBkbyBhZ3JlZSB0aGF0IHRoZSBvcGVyYXRvciBvZiBBUzIw
+MjczNCBuZWVkcyB0byBwYXkgbW9yZSBhdHRlbnRpb24gb24gDQp0aGVpciBjb25maWd1cmF0aW9u
+IHRvIHByZXZlbnQgZnVydGhlciByb3V0aW5nIGluY2lkZW50cywgZXNwZWNpYWxseSANCmNvbnNp
+ZGVyaW5nIHRoZSBjb250ZXh0IG9mIG9wZXJhdGluZyBvbiB0aGUgcHVibGljIEludGVybmV0LCBu
+b3QgdGhlaXIgDQpob21lbGFiLiBIb3dldmVyLCB0aGlzIHJlcG9ydCByZXZlYWxzIG5vdCBhIGNv
+bW1pdG1lbnQgdG8gbmV0d29yayANCnNlY3VyaXR5LCBidXQgcmF0aGVyIGEgcHJvZm91bmQgbGFj
+ayBvZiBwcm9mZXNzaW9uYWwgaW50ZWdyaXR5IHRoYXQgDQpjcm9zc2VzIHRoZSBsaW5lIGludG8g
+b2JzZXNzaXZlIGRveHhpbmcgYW5kIGhhcmFzc21lbnQuDQoNCldpc2hpbmcgeW91IGEgZ29vZCBk
+YXkuDQpjaGFyaXJpDQpNYXkgMjMsIDIwMjYNCg0K
+
+--_003_217f6bf9552c4b649b85fe5763c99736charirimoe_
+Content-Type: application/pgp-signature; name="OpenPGP_signature.asc"
+Content-Description: OpenPGP digital signature.asc
+Content-Disposition: attachment; filename="OpenPGP_signature.asc"; size=569;
+	creation-date="Sat, 23 May 2026 05:13:50 GMT";
+	modification-date="Sat, 23 May 2026 05:13:50 GMT"
+Content-ID: <25A6B994E45B0941B627AFF2DABCD456@1>
+Content-Transfer-Encoding: base64
+
+LS0tLS1CRUdJTiBQR1AgU0lHTkFUVVJFLS0tLS0NCg0Kd25zRUFCWUlBQ01XSVFUL0RXeEhuTGFB
+aWNLbDA4RWpwVlNqYjMveS9RVUNhaEUyZndVREFBQUFBQUFLQ1JBanBWU2piMy95L1RnKw0KQVFE
+emR0elhJK05teEtGL0h4K3BCKzlUOVkxWTBtWkJaYXN5dzM1eGhWMVoxZ0QvUTI1QjV0Q1hsbFc3
+UXRhZ0V3N21oM3AzNDcwdw0KZ2h1aWU4TnQzajI4YVFRPQ0KPTkyN2cNCi0tLS0tRU5EIFBHUCBT
+SUdOQVRVUkUtLS0tLQ0K
+
+--_003_217f6bf9552c4b649b85fe5763c99736charirimoe_
+Content-Type: text/plain; name="ATT00001.txt"
+Content-Description: ATT00001.txt
+Content-Disposition: attachment; filename="ATT00001.txt"; size=431;
+	creation-date="Sat, 23 May 2026 05:13:50 GMT";
+	modification-date="Sat, 23 May 2026 05:13:50 GMT"
+Content-ID: <7457173A95052F429338DD1F84904317@1>
+Content-Transfer-Encoding: base64
+
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18NCk5BTk9HIG1h
+aWxpbmcgbGlzdCANCmh0dHBzOi8vbGlzdHMubmFub2cub3JnL2FyY2hpdmVzL2xpc3QvbmFub2dA
+bGlzdHMubmFub2cub3JnL21lc3NhZ2UvVzZPVk1ZUE5ON0ZNNjVOS1JVM0hGM1JLV1FDT0tZRksv
+
+--_003_217f6bf9552c4b649b85fe5763c99736charirimoe_--

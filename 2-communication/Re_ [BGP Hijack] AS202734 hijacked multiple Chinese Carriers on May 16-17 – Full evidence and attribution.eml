@@ -1,0 +1,184 @@
+Received: by 2002:ac8:6651:0:b0:516:d8b6:9509 with SMTP id j17csp748084qtp;
+        Fri, 22 May 2026 21:41:42 -0700 (PDT)
+Received: from i-ic.cloudflare-email.net (i-ic.cloudflare-email.net. [104.30.8.82])
+        by mx.google.com with ESMTPS id 6a1803df08f44-8cc80df75dbsi55982086d6.101.2026.05.22.21.41.40
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2026 21:41:41 -0700 (PDT)
+Received: from lists.nanog.org (104.197.34.15)
+        by cloudflare-email.net (cloudflare) id CiPRa4qcIUSi
+        for <me@haoziwan.xyz>; Sat, 23 May 2026 04:41:39 +0000
+Received: from lists.nanog.org (localhost [IPv6:::1])
+	by lists.nanog.org (Postfix) with ESMTP id CC15A62310;
+	Sat, 23 May 2026 04:41:23 +0000 (UTC)
+Received: from lists.nanog.org (localhost [IPv6:::1])
+	by lists.nanog.org (Postfix) with ESMTP id 8141D60283
+	for <nanog@lists.nanog.org>; Sat, 23 May 2026 04:34:55 +0000 (UTC)
+From: Jacob-Junqi Tian via NANOG <nanog@lists.nanog.org>
+To: "nanog@lists.nanog.org" <nanog@lists.nanog.org>
+CC: "jacob.nanog.handle@tianshome.com" <jacob.nanog.handle@tianshome.com>
+Subject:
+	=?Windows-1252?Q?Re:_[BGP_Hijack]_AS202734_hijacked_multiple_Chinese_Carr?=
+ =?Windows-1252?Q?iers_on_May_16-17_=96_Full_evidence_and_attribution?=
+Thread-Topic:
+	=?Windows-1252?Q?[BGP_Hijack]_AS202734_hijacked_multiple_Chinese_Carriers?=
+ =?Windows-1252?Q?_on_May_16-17_=96_Full_evidence_and_attribution?=
+Thread-Index: AWY2OTkwg3lOAw5IipzMB0MBJR2gwDQxMzQ1
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Sat, 23 May 2026 04:34:55 +0000
+Message-ID: <177951089552.500844.8177314397215872834@lists.nanog.org>
+References: <625da9f0fed7e9287439e541f66af3ff@haoziwan.xyz>
+List-Help: <mailto:nanog-request@lists.nanog.org?subject=help>
+List-Subscribe: <mailto:nanog-join@lists.nanog.org>
+List-Unsubscribe: <mailto:nanog-leave@lists.nanog.org>
+In-Reply-To: <625da9f0fed7e9287439e541f66af3ff@haoziwan.xyz>
+Reply-To: North American Network Operators Group <nanog@lists.nanog.org>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of nanog-bounces@lists.nanog.org
+ designates 104.197.34.15 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=104.197.34.15; envelope-from="nanog-bounces@lists.nanog.org";
+ helo=lists.nanog.org;
+x-ms-reactions: disallow
+Content-Type: text/plain; charset="Windows-1252"
+Content-ID: <CE6C152F8CECB3438A510AF6E5FC9E79@1>
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hello,
+
+Thanks for sharing this incident with the community. On May 17, because of =
+an incorrect filter configuration, routers of AS202734 exported a number of=
+ prefixes from its internal routing table to the route collector of the Hur=
+ricane Electric BGP looking glass (bgp.he.net).=20
+
+For BGP sessions with upstream transit providers (real routers), AS202734 u=
+ses a tighter set of filters, and export only prefixes that are within a sm=
+all number of whitelisted "ANNOUNCED_v4/v6" subnets. Thus, none of the said=
+ prefixes were ever exported to real routers on the internet, and this inci=
+dent did not affect any public routing infrastructure. However, this incide=
+nt might have triggered a number of automated emails from the HE.net lookin=
+g glass to those who subscribed to updates about the affected prefixes. The=
+se are truly what one would describe as "false alarms". If you did receive =
+one of these emails and was alerted, you have my apologies.
+
+For the benefit of the NANOG community, here is a detailed description of w=
+hat triggered this "false alarm" incident.
+
+AS202734/AS402333 runs a custom fork of BIRD3 as the routing control plane =
+for its routers. The configuration files for these routers are rendered aut=
+omatically from a Jinja template- and the aforementioned export filter is n=
+o exception. The same filter template controls both routes exported to tran=
+sit providers and public looking glass route collectors such as bgp.he.net.
+
+When AS202734 receives a prefix from its upstreams or IX peers, the import =
+filter would automatically tag the route with a large community of the form=
+ ({{ cold_potato_asn }}, {{ router_ld2_id }}, {{ neighbor_asn }})). This co=
+mmunity identifies the source of the route, as well as the AS202734 router =
+where the prefix was learned.=20
+
+BGP looking glasses- bgp.he.net, bgptools, etc.- typically require a full t=
+able to be exported- not just routes whitelisted for announcement to upstre=
+ams. Since the whitelist filter no longer applies, some alternative method =
+would be necessary to filter out routes that are in the iBGP table, but are=
+ not learned from peers or upstreams- these include internal routing infras=
+tructure prefixes, as well as other types of routing optimizations that sho=
+uld not be exported to the public internet. It seems like a natural option =
+to build this filter around the aforementioned BGP Large Community, which i=
+s supposedly applied only to routes learned from other networks, and not fr=
+om the internal infrastructure. As seen in line 30 of the Jinja template be=
+low, "session_export_non_local" evaluates to True for route collectors (but=
+ not for upstream transit providers,) and routes would be accepted for expo=
+rt to the collectors even if they are not in the "announced" whitelist- as =
+long as they are tagged
+  with this large community when learned from peers or upstream. In the fil=
+ter for regular upstream transit providers, the original whitelist still ap=
+plies.=20
+
+This setup worked just as expected for months, and routes observed at AS202=
+734 were visible through various public looking glasses, helping other netw=
+orks understand the reachability of their prefixes. However, up to this poi=
+nt, there is no clear way to determine from which session or geographic reg=
+ion was a particular prefix exported- either to the route collector or to a=
+ real upstream. To resolve this, it seems natural to reuse the same large c=
+ommunity- tagging exported routes with geographical router info and session=
+ info in the export filter. See line 15 of the code snippet below:=20
+
+        # v6 version of the filter is shown; the filter for v4 follows the =
+same logic
+     1  filter ebgp_export_v6_{{ session_id }} {
+     2  {%       for community in session_communities %}
+     3  {%         set community_value =3D community if community is string=
+ else (community | join(', ')) %}
+     4    bgp_community.add(({{ community_value }}));
+     5  {%       endfor %}
+     6  {%       for community in session_large_communities %}
+     7  {%         set community_value =3D community if community is string=
+ else (community | join(', ')) %}
+     8    bgp_large_community.add(({{ community_value }}));
+     9  {%       endfor %}
+    10  {%       for community in session_ext_communities %}
+    11  {%         set community_value =3D community if community is string=
+ else (community | join(', ')) %}
+    12    bgp_ext_community.add(({{ community_value }}));
+    13  {%       endfor %}
+    14
+    15    # Added on the day of the incident:
+            # bgp_large_community.add(({{ cold_potato_asn }}, {{ router_ld2=
+_id }}, {{ neighbor_asn }}));
+    16
+    17  {%       for prepend in session_prepend %}
+    18    bgp_path.prepend({{ prepend }});
+    19  {%       endfor %}
+    20
+    21    if net =3D ::/0 then {
+    22  {%       if session_export_default %}
+    23      accept;
+    24  {%       else %}
+    25      reject;
+    26  {%       endif %}
+    27    }
+    28
+    29    if (net ~ ANNOUNCED_v6) then accept;
+    30  {%       if session_export_non_local %}
+    31    if (bgp_large_community ~ [ ({{ cold_potato_asn }}, *, *) ]) then=
+ accept;
+    32  {%       endif %}
+    33    reject;
+
+As you might have anticipated, the issue is that this newly-added BGP large=
+ community applies to all prefixes routes in the table, and not just those =
+directly learned from upstream/peers. As a result, a large number of intern=
+al-only prefixes (4,622 to be exact) with missing BGP PATH info also receiv=
+ed this large community. While the whitelisting mechanism prevented these p=
+refixes from being announced to upstream transit providers, these prefixes =
+were announced to route collectors of BGP.he.net from two of the AS202734 r=
+outers.
+
+The fix, as you might expect, is to move the filter "accept" logic into its=
+ own function, and apply any information communities only after if the "acc=
+ept" function returned true and no "reject" filter was triggered. After dep=
+loying this fix and testing extensively, AS202734 is now once again contrib=
+uting data to the public looking glasses- with the BGP large community incl=
+uded to help engineers of other networks better understand the reachability=
+ of their prefixes across geographies. To avoid similar incidents in the fu=
+ture, a staging environment paired with extensive code reviews might be hel=
+pful.=20
+
+I hereby thank the NANOG community and in particular Zhong Miao, the Indepe=
+ndent Security Researcher, for bringing this issue to my attention so swift=
+ly. I also appreciate comments from the community regarding best practices =
+to make the deployment process more reliable and secure.
+
+Regards,
+Jacob-Junqi Tian
+May. 23, 2026.
+_______________________________________________
+NANOG mailing list=20
+https://lists.nanog.org/archives/list/nanog@lists.nanog.org/message/DOAA6GM=
+U234E5XXMNYR53F7MMGBHHILD/
+

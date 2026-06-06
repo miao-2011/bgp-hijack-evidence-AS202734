@@ -1,0 +1,81 @@
+Received: by 2002:ac8:6651:0:b0:516:d8b6:9509 with SMTP id j17csp448210qtp;
+        Fri, 22 May 2026 09:33:19 -0700 (PDT)
+Received: from i-cc.cloudflare-email.net (i-cc.cloudflare-email.net. [104.30.8.22])
+        by mx.google.com with ESMTPS id 6a1803df08f44-8cc8132121dsi27315116d6.317.2026.05.22.09.33.18
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2026 09:33:19 -0700 (PDT)
+Received: from fhigh-b4-smtp.messagingengine.com (202.12.124.155)
+        by cloudflare-email.net (cloudflare) id eSY85B7W9DcH
+        for <me@haoziwan.xyz>; Fri, 22 May 2026 16:33:17 +0000
+Received: from phl-compute-06.internal (phl-compute-06.internal [10.202.2.46])
+	by mailfhigh.stl.internal (Postfix) with ESMTP id 42F727A0056
+	for <me@haoziwan.xyz>; Fri, 22 May 2026 12:33:17 -0400 (EDT)
+Received: from phl-frontend-03 ([10.202.2.162])
+  by phl-compute-06.internal (MEProxy); Fri, 22 May 2026 12:33:17 -0400
+Received: by mail.messagingengine.com (Postfix) with ESMTPA for <me@haoziwan.xyz>;
+ Fri, 22 May 2026 12:33:16 -0400 (EDT)
+From: Yanzheng Sun <i@sunyz.net>
+To: me <me@haoziwan.xyz>
+Subject: Re: [BGP Hijack] AS202734 - Follow-up on the HE-only visibility
+Thread-Topic: [BGP Hijack] AS202734 - Follow-up on the HE-only visibility
+Thread-Index: AWEwZTNhs82wM+4FSqTQknDuHJORODFFRTQw
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Fri, 22 May 2026 16:33:03 +0000
+Message-ID: <975FD530-5BF8-4BDD-BBE2-2E5FEB172541@sunyz.net>
+References: <5237994ad300c38bbbbe8f01a0fbb41a@haoziwan.xyz>
+In-Reply-To: <5237994ad300c38bbbbe8f01a0fbb41a@haoziwan.xyz>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of i@sunyz.net designates
+ 202.12.124.155 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=202.12.124.155; envelope-from="i@sunyz.net";
+ helo=fhigh-b4-smtp.messagingengine.com;
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <E8EF0772C083554E9C7D24BE64902278@1>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+SGVsbG8sDQoNCjEuIFJvdXRlIGNvbGxlY3RvcnMgY2Fubm90IGJlIHVzZWQgZm9yIHJvdXRpbmcg
+ZXhwZXJpbWVudHMgdGhlbXNlbHZlcy4gVGhlaXIgcHVycG9zZSBpcyB0byBjb2xsZWN0IHJvdXRp
+bmcgdGFibGVzLCBzbyBzb21lIG9wZXJhdG9ycyBzaW1wbHkgZXhwb3J0IGFsbCByb3V0ZXMgdG8g
+dGhlbS4gQVMyMDI3MzQgbGlrZWx5IGZvcmdvdCB0aGF0IHRoZSBIRSBjb2xsZWN0b3Igc2Vzc2lv
+biBoYWQgYSBicm9hZCBleHBvcnQgcG9saWN5IGVuYWJsZWQgd2hlbiBpbXBvcnRpbmcgaW52YWxp
+ZCByb3V0ZXMgaW50ZXJuYWxseS4NCg0KMi4gVGhlIENoaW5lc2UgcHJlZml4ZXMgd2VyZSBsaWtl
+bHkgdXNlZCBpbnRlcm5hbGx5IGZvciB0cmFmZmljIGVuZ2luZWVyaW5nIG9yIHBhdGggdGVzdGlu
+ZyBhbmQgbm9ybWFsbHkgd291bGQgaGF2ZSByZW1haW5lZCBjb25maW5lZCB0byBBUzIwMjczNOKA
+mXMgaW50ZXJuYWwgcm91dGluZyBlbnZpcm9ubWVudC4gVGhpcyB3YXMgbm90IGhhcm1mdWwsIGhh
+ZCBubyBvcGVyYXRpb25hbCBvciBzZWN1cml0eSBpbXBhY3QsIGFuZCBkaWQgbm90IGFmZmVjdCBy
+ZWFsLXdvcmxkIHJvdXRpbmcgaW4gYW55IHdheS4NCg0KMy4gU29tZSBwbGF0Zm9ybXMgc3VjaCBh
+cyBiZ3AudG9vbHMgYXBwbHkgYmFzaWMgZmlsdGVycyB0byBjb2xsZWN0b3IgZmVlZHMgYmVmb3Jl
+IGRpc3BsYXlpbmcgcm91dGVzLCB3aGlsZSBIRSBhcHBlYXJzIHRvIGRpc3BsYXkgcmF3IGNvbGxl
+Y3RvciBkYXRhIGRpcmVjdGx5LiBTaW5jZSB0aGVzZSByb3V0ZXMgbmV2ZXIgcHJvcGFnYXRlZCBi
+ZXlvbmQgdGhlIGNvbGxlY3RvciB2aWV3IGFueXdheSwgd2hldGhlciBzdWNoIGZpbHRlcmluZyBl
+eGlzdHMgaXMgbW9zdGx5IGFuIGltcGxlbWVudGF0aW9uIGNob2ljZSByYXRoZXIgdGhhbiBhIHNl
+Y3VyaXR5IGlzc3VlLg0KDQpSZWdhcmRzLA0KWWFuemhlbmcNCg0KPiBPbiBNYXkgMjIsIDIwMjYs
+IGF0IDExOjUx4oCvUE0sIG1lIDxtZUBoYW96aXdhbi54eXo+IHdyb3RlOg0KPiANCj4gWWFuemhl
+bmcsDQo+IA0KPiBUaGFuayB5b3UgZm9yIHRoaXMgY2xhcmlmaWNhdGlvbi4gVGhpcyBpcyB0aGUg
+bWlzc2luZyBwaWVjZSBJJ3ZlIGJlZW4gdHJ5aW5nIHRvIGZpbmQuDQo+IA0KPiBTbywgdG8gcmVz
+dGF0ZSB3aGF0IHlvdSdyZSBzYXlpbmcsIHRoZSAzLDk0OCBib2dvbiByb3V0ZXMgd2VyZSByZWFs
+IChBUzIwMjczNCBkaWQgaW1wb3J0IHRoZW0gaW50byBpdHMgQkdQIHRhYmxlKSwgYnV0IHRoZXkg
+d2VyZSBvbmx5IGxlYWtlZCB0byBIRSdzIGNvbGxlY3RvcihzKSBhbmQgbm90IHByb3BhZ2F0ZWQg
+dG8gdGhlIGdsb2JhbCBERlouIFRoaXMgZXhwbGFpbnMgdGhlIGRpc2NyZXBhbmN5IGJldHdlZW4g
+SEUgYW5kIFJJUEUgUklTIGRhdGEgcGVyZmVjdGx5Lg0KPiANCj4gVGhpcyBhbHNvIGFuc3dlcnMg
+Q2hhcmxpZSdzIHF1ZXN0aW9uIGFib3V0ICJwcm9wYWdhdGlvbiIg4oCUIGl0IHdhc24ndCBnbG9i
+YWwsIGJ1dCBpdCB3YXMgdGFyZ2V0ZWQgKGF0IHJvdXRlIGNvbGxlY3RvcnMpLg0KPiANCj4gSSBo
+YXZlIGEgZmV3IGZvbGxvdy11cCBxdWVzdGlvbnMsIHB1cmVseSBmb3IgbXkgb3duIHRlY2huaWNh
+bCB1bmRlcnN0YW5kaW5nOg0KPiANCj4gMS4gSG93IGNvbW1vbiBpcyBpdCBmb3IgYW4gQVNOIHRv
+IHVzZSBhIHJvdXRlIGNvbGxlY3RvciBzZXNzaW9uIChsaWtlIEhFJ3MpIGZvciAiaW50ZXJuYWwg
+cm91dGluZyBleHBlcmltZW50cyIgd2l0aG91dCBwcm9wZXIgb3V0Ym91bmQgZmlsdGVycz8gSXMg
+dGhpcyBjb25zaWRlcmVkIGEgYmVzdCBwcmFjdGljZSwgb3IgYSBrbm93biByaXNrPw0KPiANCj4g
+Mi4gRG9lcyB0aGUgZmFjdCB0aGF0IHRoZSBsZWFrZWQgcHJlZml4ZXMgaW5jbHVkZWQgc3BlY2lm
+aWMsIHNlbnNpdGl2ZSBDaGluZXNlIGNhcnJpZXIgc3BhY2UgKGUuZy4sIENoaW5hIFRlbGVjb20n
+cyAxMjUuMTA0LjAuMC8xMykgY2hhbmdlIGFueXRoaW5nIGFib3V0IGhvdyB0aGlzICJleHBlcmlt
+ZW50IiBzaG91bGQgYmUgdmlld2VkPw0KPiANCj4gMy4gSG93IGNhbiB0aGUgY29tbXVuaXR5IChv
+ciBIRSkgcHJldmVudCBzaW1pbGFyICJjb2xsZWN0b3Itb25seSBsZWFrcyIgZnJvbSBiZWluZyB1
+c2VkIHRvIGdlbmVyYXRlIG1pc2xlYWRpbmcgYm9nb24gYWxlcnRzIGluIHRoZSBmdXR1cmU/DQo+
+IA0KPiBBZ2FpbiwgdGhhbmsgeW91IGZvciBoZWxwaW5nIG1lIHVuZGVyc3RhbmQgdGhlIG9wZXJh
+dGlvbmFsIHJlYWxpdHkgYmVoaW5kIHRoZSBkYXRhLg0KPiANCj4gbWUNCg0KDQo=

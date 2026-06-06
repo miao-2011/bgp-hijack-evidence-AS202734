@@ -1,0 +1,116 @@
+Received: by 2002:ac8:6651:0:b0:516:d8b6:9509 with SMTP id j17csp773568qtp;
+        Fri, 22 May 2026 23:15:40 -0700 (PDT)
+Received: from i-ic.cloudflare-email.net (i-ic.cloudflare-email.net. [104.30.8.82])
+        by mx.google.com with ESMTPS id af79cd13be357-914bb9d0d58si386267085a.357.2026.05.22.23.15.39
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Fri, 22 May 2026 23:15:40 -0700 (PDT)
+Received: from lists.nanog.org (104.197.34.15)
+        by cloudflare-email.net (cloudflare) id Gy5dOrznogjQ
+        for <me@haoziwan.xyz>; Sat, 23 May 2026 06:15:37 +0000
+Received: from lists.nanog.org (localhost [IPv6:::1])
+	by lists.nanog.org (Postfix) with ESMTP id 2EACE62754;
+	Sat, 23 May 2026 06:15:21 +0000 (UTC)
+Received: from lists.nanog.org (localhost [IPv6:::1])
+	by lists.nanog.org (Postfix) with ESMTP id F38D160A49
+	for <nanog@lists.nanog.org>; Sat, 23 May 2026 06:00:40 +0000 (UTC)
+From: ahmrcxy--- via NANOG <nanog@lists.nanog.org>
+To: "nanog@lists.nanog.org" <nanog@lists.nanog.org>
+CC: "ahmrcxy@gmail.com" <ahmrcxy@gmail.com>
+Subject:
+	=?utf-8?B?UmU6IFtCR1AgSGlqYWNrXSBBUzIwMjczNCBoaWphY2tlZCBtdWx0aXBsZSBD?=
+ =?utf-8?B?aGluZXNlIENhcnJpZXJzIG9uIE1heSAxNi0xNyDigJMgRnVsbCBldmlkZW5j?=
+ =?utf-8?Q?e_and_attribution?=
+Thread-Topic:
+	=?utf-8?B?W0JHUCBIaWphY2tdIEFTMjAyNzM0IGhpamFja2VkIG11bHRpcGxlIENoaW5l?=
+ =?utf-8?B?c2UgQ2FycmllcnMgb24gTWF5IDE2LTE3IOKAkyBGdWxsIGV2aWRlbmNlIGFu?=
+ =?utf-8?Q?d_attribution?=
+Thread-Index: AWY2OTkwg3lOAw5IipzMB0MBJR2gwDE3OTg5
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Sat, 23 May 2026 06:00:40 +0000
+Message-ID: <177951604099.516588.8512947852471125801@lists.nanog.org>
+References: <625da9f0fed7e9287439e541f66af3ff@haoziwan.xyz>
+List-Help: <mailto:nanog-request@lists.nanog.org?subject=help>
+List-Subscribe: <mailto:nanog-join@lists.nanog.org>
+List-Unsubscribe: <mailto:nanog-leave@lists.nanog.org>
+In-Reply-To: <625da9f0fed7e9287439e541f66af3ff@haoziwan.xyz>
+Reply-To: North American Network Operators Group <nanog@lists.nanog.org>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-Auto-Response-Suppress: All
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of nanog-bounces@lists.nanog.org
+ designates 104.197.34.15 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=104.197.34.15; envelope-from="nanog-bounces@lists.nanog.org";
+ helo=lists.nanog.org;
+x-ms-reactions: disallow
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <405C8B5C5734494E95ADEA9ED627342B@1>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+QXBvbG9naWVzIHRvIGFsbCBzdWJzY3JpYmVycyAgZm9yIHJlcGx5aW5nIGluIENoaW5lc2UgaGVy
+ZS4gU2V2ZXJhbCBtZW1iZXJzIGhhdmUgYWxyZWFkeSByZXBseSBoaW0gaW4gRW5nbGlzaCwgYnV0
+IHRoZSBtZXNzYWdlIGRvZXMgbm90IGFwcGVhciB0byBiZSBnZXR0aW5nIHRocm91Z2guIEkgd2ls
+bCBub3cgcmVwbHkgaW4gQ2hpbmVzZSB0byBlbnN1cmUgdGhlcmUgaXMgbm8gZnVydGhlciBtaXNj
+b21tdW5pY2F0aW9uIG9yIGV2YXNpb24gYW5kIHRvIHN0b3AgZnVydGhlciB0aW1lLXdhc3Rpbmcu
+DQpDaGluZXNlIHZlcnNpb27vvJoNCuS6sueIseeahCBaaG9uZyBtaWFv77yMDQrlnKjnnIvov4fo
+v5Hlh6DlpKnmgqjnmoTooYzkuLrkuYvlkI7vvIzljIXmi6zlhbbku5bkurrnu5nmgqjmuIXmpZrn
+moTop6Pph4rvvIzmgqjku43kuI3nvaLkvJHvvIzmiJHlrp7lnKjkuI3lv43lv4Pmgqjnu6fnu63l
+nKggTkFOT0cgTWFpbCBMc2l0IOWItumAoOi/meS6m+Weg+WcvuOAgeWujOWFqOaXoOeUqOeahOS/
+oeaBr+OAgg0K6aaW5YWI77yM5oKo5Y+R6YCB55qE5Yeg5LmO5q+P5LiA5bCB6YKu5Lu255qEIEFJ
+IOeUn+aIkOeOh+WHoOS5jumDveaYrzEwMCXvvIzmiJHkuI3nn6XpgZPmgqjmmK/lkKbnnJ/nmoTn
+kIbop6PorqHnrpfmnLrnvZHnu5zvvIzljIXmi6wgQkdQIOetieeahOefpeivhu+8iOS9huaYr+eQ
+huiuuuS4iuadpeivtO+8jOaCqOeahOefpeivhuWCqOWkh+WPr+iDveWujOWFqOS4ujDvvInvvIzk
+u6XkuIvmmK/kvaDmj5Dlh7rnmoTmiYDmnInpl67popjnmoTop6PnrZTjgIINCjEu5YWz5LqO5L2g
+5o+Q5Yiw55qEIOKAnEFTMjAyNzM0IOWKq+aMgeS4reWbveeUteS/oee9keauteKAnQ0K5Zyo5LqS
+6IGU572R6Lev55Sx5Zmo5LiK77yM6YCa5bi45Li65LqG6LCD5pW05pys572R5Yiw5ZCE5aSnIElT
+UCDnmoTmtYHph4/vvIzpgJrluLjnmoTlgZrms5XmmK/lsIbov5nkupvot6/nlLHigJzlr7zlhaXl
+iLDot6/nlLHlmajphY3nva7kuK3igJ3miJbmmK/igJ3pgJrov4fov4fmu6TlmajliIbnprvov5np
+g6jliIbot6/nlLHigJzvvIzlubbpgJrov4fphY3nva7osIPmlbTmnKznvZHliLDov5nkupvot6/n
+lLHnmoTmtYHph4/vvIzov5nmmK/lrozlhajlkIjop4TkuJTluLjop4HnmoTmioDmnK/miYvmrrXv
+vIzku5blhpnlhaUgQmlyZCDphY3nva7nmoTmraPmmK/ov5nkupvkuJzopb/jgIINCkFTMjAyNzM0
+IOacrOi0qOS4iuaYr+S4uuS6huWMuuWIhumAmuW+gOS4reWbveWkp+mZhuWcsOWMuueahOa1gemH
+j++8jOaJgOS7peWwhui/meS6m+i3r+eUseWvvOWFpeWIsOi3r+eUseWZqOmFjee9ruS4re+8jOi/
+memDqOWIhui3r+eUsemAmuW4uOayoeaciSBBUy1QQVRI77yM5ZCM5pe25Lmf5LiN5bqU6K+l6KKr
+5a+85YWl5Yiw5YWs572R5Lit77yM5LuW54qv5LqG5LiA5Liq6ZSZ6K+v77yM5Lmf5bCx5piv5Zyo
+5ZCRIEh1cnJpY2FuZSBFbGVjdHJpYyBCR1AgVG9vbGtpdCDotKHnjK7mlbDmja7ml7bvvIzmsqHm
+nInlsIbor6Xpg6jliIbot6/nlLHov4fmu6TmjonvvIzkuI7mraTlkIzml7YgQVMtUEFUSCDkuLrn
+qbrvvIxIRSDnmoTmlLbpm4blmajkvr/lsIbor6Xot6/nlLHnmoTotbfmupDlrprkuYnkuLogQVMy
+MDI3MzTjgILov5nlj6rmmK/kuIDkuKrlkJEgQkdQIOaUtumbhuWZqOeahOmUmeivr+WvvOWHuu+8
+jEFTMjAyNzM0IOW5tuayoeacieWwhui/meS6m+i3r+eUseWPkeW4g+WIsOS7u+S9leS4iua4uOOA
+guWcqOWFrOe9keS4iuayoeacieS7u+S9leWPr+ingeaAp++8jOS4jeS8mumAoOaIkOS7u+S9leW9
+seWTjeOAgg0K5YW25qyh77yMQkdQIOaYr+acieWuieWFqOaOquaWveeahO+8jOe7neWkp+WkmuaV
+sOeahCBJU1Ag6YO96YOo572y5LqGIElSUi9SUEtJIOi/h+a7pOWZqO+8jOi/meS6m+i1t+a6kOmU
+meivr+eahOi3r+eUseWwseeul+aYr+WvvOWHuuWIsOS6huS4iua4uO+8jOS5n+S8muiiq+S4iua4
+uOebtOaOpeaLkue7ne+8jOS4jeS8muWPkeeUn+S7u+S9leS6i+aDheOAgg0KSHVycmljYW5lIEVs
+ZWN0cmljIEJHUCBUb29sa2l0IOWmguWFtuWQjeensO+8jOS7luaYr+S4gOS4quW3peWFt++8jOac
+rOi0qOS4iuaYr+S4uuS6huaWueS+v+afpeivoi/noJTnqbYgQkdQIOi3r+eUsS/ov5DokKXllYbn
+rYnnmoTkv6Hmga/nmoTvvIzku5bnmoTmlbDmja7mraPmmK/mnaXmupDkuo7mlbDmja7mj5Dkvpvo
+gIXvvIzov5nph4zlj6rkuI3ov4fmmK/mlbDmja7mj5DkvpvogIXkuI3mhY7mj5DkvpvkuobplJno
+r6/nmoTmlbDmja7vvIxIdXJyaWNhbmUgRWxlY3RyaWMgQkdQIFRvb2xraXQg5Lmf5ZCM5pe25Zyo
+6aG16Z2i5LiK5bCG6Lev55Sx5qCH57qi77yM5LiU5pi+56S65Zyo5YW25LuW5pS26ZuG5Zmo55qE
+MOWPr+ingeaAp++8jOivtOaYjui/meWPquaYr+S4gOadoemUmeivr+S/oeaBr+OAgg0KMi7lhbPk
+uo7kvaDmj5DliLDnmoTlm73lrrYv5Zyw5Yy65L+h5oGv5qCH5rOo6ZSZ6K+v77yM5Li65LuA5LmI
+5ZCR5LiA5Liq57uE57uH5YiG6YWN55qE5LqS6IGU572R6LWE5rqQ5LiA5a6a6KaB5qCH5rOo5pys
+5Yy65Z+f77yM5oqR5oiW5piv5Zyo5pys5Yy65Z+f5L2/55So44CCDQrnu53lpKflpJrmlbDkupHl
+joLllYYgSVNQ77yM6YO95Zyo5LuO5LqL6Leo5Zu95Lia5Yqh77yM5LuW5Lus5pys5bCx5Y+v5Lul
+5Zyod2hvaXPmoIfms6jlnLDnkIbkvY3nva7kv6Hmga/vvIzor7TmmI7ku5bku6zlrp7pmYXlnKjl
+k6rkuKrlnLDljLrkvb/nlKjor6XotYTmupDjgILvvIjlnKhSSVLlhYHorrjnmoTmg4XlhrXkuIvv
+vIzov5nkupvooYzkuLrmr6vml6Dpl67popjvvIxSSVBF5a+55LqO5oKo5omA5Li+5oql55qE6L+Z
+5Lqb5a2Q572R5piO5pi+5piv5YWB6K646L+Z5Lqb6KGM5Li655qE77yJ44CCDQrmiYDku6XvvIzm
+gqjlrozlhajmsqHmnInlv4XopoHlnKjov5nph4zlpKfotLnlkajnq6DnmoTmnJ3nnYDkuI7ku5bn
+m7jlhbPnmoTpgq7nrrHlj5HpgIHpqprmibDpgq7ku7bvvIzmiJHkuI3nn6XpgZPmgqjnmoTnm67n
+moTmmK/ku4DkuYjjgILkuLrkuobkupLogZTnvZHlronlhajvvIzmgqjlj6/ku6XljrvmraPluLjn
+oJTnqbbvvIzlsLHnrpfku5bmj5DkvpvplJnor6/mlbDmja7vvIzkuZ/lupTor6XmmK/nm7TmjqXl
+kJHku5bmnKzkurrlj5Hpgq7ku7bmj5DphpLjgILogIzkuI3mmK/lnKjlkITlpITlj5HpgIEgQWJ1
+c2XvvIzljIXmi6zlnKjov5nph4zvvIznlJroh7Pkvb/nlKggQUkg55Sf5oiQ5paH5pys77yM5oKo
+5Yeg5LmO5rKh5pyJ5Lu75L2V6L+Z5pa56Z2i55qE6L+Z5pa56Z2i5YKo5aSH77yM5bCx5Zyo55uy
+55uu5L2/55SoIEFJIOeUn+aIkOmCruS7tu+8jOWPkemAgSBBYnVzZe+8jOaCqOi/meaXoOeWkeaY
+r+WGjee7meekvuWMuueBjOWxjuOAgg0K5oKo55qE6KGM5Li65LiN5byC5LqO6Lev6L6555qE5LiA
+5p2h55av54uX5Zyo5ZKs6L+H6Lev55qE5Lq677yM5a6M5YWo5LiA5Liq5YK76YC844CCDQpfX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fXwpOQU5PRyBtYWlsaW5n
+IGxpc3QgCmh0dHBzOi8vbGlzdHMubmFub2cub3JnL2FyY2hpdmVzL2xpc3QvbmFub2dAbGlzdHMu
+bmFub2cub3JnL21lc3NhZ2UvWFI3WFBBTUVTSU1ITEhQNEtVUDJVQzZOSzMyUUVJM1Mv
