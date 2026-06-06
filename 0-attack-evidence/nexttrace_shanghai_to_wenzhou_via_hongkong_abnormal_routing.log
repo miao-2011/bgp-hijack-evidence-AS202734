@@ -1,0 +1,35 @@
+NextTrace v1.5.0 2025-11-28T02:24:32Z 82cebb7
+[NextTrace API] preferred API IP - 103.117.102.27 - 207.77ms - DMIT.NRT
+IP Geo Data Provider: LeoMoeAPI
+192.168.1.211 -> 125.110.76.228, 30 hops max, 52 bytes payload, ICMP mode
+1   192.168.1.1     *                         RFC1918          
+                                              1.18 ms / 0.92 ms / 1.03 ms
+2   58.32.32.1      AS4812                    Shanghai China  长宁区 chinatelecom.cn  电信
+                                              4.94 ms / 6.27 ms / 6.18 ms
+3   61.172.67.105   AS4812                    Shanghai China   chinatelecom.cn 
+                                              5.88 ms / 5.59 ms / 4.27 ms
+4   61.152.24.193   AS4812   [CHINANET-SH]    Shanghai China   chinatelecom.cn  电信
+                                              9.18 ms / 6.09 ms / 11.40 ms
+5   59.43.47.94     *        [CN2-BackBone]   Shanghai China   chinatelecom.cn  电信
+                                              7.42 ms / 8.75 ms / 9.12 ms
+6   121.59.92.122   *                         Hong Kong China    电信   
+                                              18.40 ms / 17.75 ms / 18.21 ms
+7   *
+8   220.186.241.129 AS4134   [CHINANET-ZJ]    Wenzhou Zhejiang China  chinatelecom.com.cn  电信
+                                              17.49 ms / 19.52 ms / * ms
+9   *
+10  125.110.64.1    AS4134                    Wenzhou Zhejiang China  chinatelecom.com.cn  电信
+                                              17.10 ms / 17.33 ms / 16.58 ms
+11  125.110.76.228  AS4134                    Wenzhou Zhejiang China  chinatelecom.com.cn  电信
+                                              19.71 ms / 16.72 ms / 17.22 ms
+Route-Path 功能实验室
+AS* 「RFC1918『』」
+ ╭╯
+ ╰AS4812 中国电信「Shanghai『China』」
+ ╭╯
+ ╰AS* 中国电信「Shanghai『China』→ Hong Kong『China』」
+ ╭╯
+ ╰AS4134 中国电信「Wenzhou『China』」
+MapTrace URL: https://assets.nxtrace.org/tracemap/4ffa7922-436a-5771-9ab2-1fc6333a0c95.html
+
+[exit 0]

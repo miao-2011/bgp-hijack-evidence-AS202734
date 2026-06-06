@@ -1,0 +1,11 @@
+NextTrace v1.5.0 2025-11-28T02:24:32Z 82cebb7
+[NextTrace API] preferred API IP - 103.117.102.27 - 203.62ms - DMIT.NRT
+IP Geo Data Provider: LeoMoeAPI
+2001:678:1184::8621:211 -> 240e:393:3407:6eb0:1c1f:9132:1c1b:dd1b, 30 hops max, 52 bytes payload, ICMP mode
+1   240e:393:3407:6eb0:1c1f:9132:1c1b:dd1b AS4134   Wenzhou Zhejiang China  chinatelecom.com.cn 电信
+                                       29.78 ms / 25.68 ms / 25.91 ms
+Route-Path 功能实验室
+AS4134 中国电信「Wenzhou『China』」
+MapTrace URL: https://assets.nxtrace.org/tracemap/bb88557d-d0de-5950-adc6-316dd4190f4d.html
+
+[exit 0]

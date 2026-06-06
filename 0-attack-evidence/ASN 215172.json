@@ -1,0 +1,232 @@
+{
+  "Network": {
+    "Name": "JianyueLab Main Network",
+    "组织": "JIANYUELAB LTD",
+    "别名": "",
+    "长名称": "JianyueLab Ltd Network Backbone & Main Network",
+    "公司网站": "https://jianyuelab.co",
+    "ASN": "215172",
+    "IRR as-set/route-set 对象": "RADB::AS-JYL RIPE::AS215172:AS-JIANYUELAB",
+    "路由服务器 URL": "",
+    "Looking Glass URL": "",
+    "Network Types": "Cable/DSL/ISP, Enterprise",
+    "IPv4 前缀": "100",
+    "IPv6 前缀": "1000",
+    "流量级别": "10-20 Gbps",
+    "交通比率": "平衡",
+    "地理范围": "全球性",
+    "支持的协议": "单播 IPv4 多播 IPv6 Never via route servers",
+    "上次更新": "2026-05-01T00:22:57Z",
+    "Public Peering Info Updated": "2026-05-20T14:43:46Z",
+    "Peering Facility Info Updated": "2026-03-29T12:23:24Z",
+    "Contact Info Updated": "2026-01-09T06:11:43Z",
+    "注释": "",
+    "RIR Status": "ok",
+    "RIR Status Updated": "2025-12-01T22:55:07Z",
+    "Logo": "",
+    "对等政策信息": "",
+    "对等政策": "",
+    "一般政策": "开放",
+    "多个地点": "不需要",
+    "比率要求": "否",
+    "合同要求": "不需要",
+    "Health Check": ""
+  },
+  "Public Peering Exchange Points": [
+    {
+      "交换点": "BGP.Exchange - Frankfurt",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:24::230",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "BGP.Exchange - Fremont",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:22::148",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "BGP.Exchange - Singapore",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:7::133",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "BGP.Exchange - Taipei",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:78::10d",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "BGP.Exchange - Tokyo",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:9::114",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "BGP.Exchange - Tokyo",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2a0e:8f01:1000:9::133",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "CXIX - Great Lakes",
+      "IPv4": "33.0.0.42",
+      "ASN": "215172",
+      "IPv6": "2a0f:7803:fc60:aaaa::2151:72",
+      "Capacity": "10G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "FogIXP",
+      "IPv4": "185.1.147.77",
+      "ASN": "215172",
+      "IPv6": "2001:7f8:ca:1:0:21:5172:1",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "KCIX",
+      "IPv4": "206.51.7.94",
+      "ASN": "215172",
+      "IPv6": "2001:504:1b:1::94",
+      "Capacity": "10G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "LOCIX FRANKFURT",
+      "IPv4": "185.1.166.147",
+      "ASN": "215172",
+      "IPv6": "2001:7f8:f2:e1:0:21:5172:1",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "MSR IX",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2602:f919:90f:fffa::2151:72",
+      "Capacity": "100G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "ONIX",
+      "IPv4": "149.112.50.70",
+      "ASN": "215172",
+      "IPv6": "2001:504:125:e1::70",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "Protocol 7 IX - Hong Kong",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2602:f92a:1315:2::19",
+      "Capacity": "100G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "Protocol 7 IX - Hong Kong",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2602:f92a:1315:2::b",
+      "Capacity": "100G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "Protocol 7 IX - Lycheen Japan",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2602:f92a:1315::4",
+      "Capacity": "100G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "Protocol 7 IX - Tokyo",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2602:f92a:1315:1::3",
+      "Capacity": "100G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "STUIX",
+      "IPv4": "103.158.187.182",
+      "ASN": "215172",
+      "IPv6": "2a0f:5707:ffe3::182",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    },
+    {
+      "交换点": "ZXIX Hong Kong",
+      "IPv4": "",
+      "ASN": "215172",
+      "IPv6": "2406:840:1f:1000:0:21:5172:1",
+      "Capacity": "1G",
+      "Port Location": "",
+      "RS 对等": "",
+      "BFD Support": ""
+    }
+  ],
+  "Interconnection Facilities": [
+    {
+      "设施": "Equinix TY9 - Tokyo",
+      "国家和地区": "日本",
+      "城市": "Tokyo"
+    }
+  ],
+  "Contact Points": [
+    {
+      "角色": "NOC",
+      "名称": "JianyueLab Network NOC",
+      "手机": "",
+      "Email": "noc@jianyuelab.net"
+    }
+  ]
+}
