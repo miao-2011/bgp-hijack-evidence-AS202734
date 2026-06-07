@@ -5,22 +5,39 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 ## Key Facts
 
 - **4,622 prefixes** were exported to Hurricane Electric's route collector
-- Affected prefixes include: China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, etc.
+- Affected prefixes include: China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and more
 - The operator manually injected China Telecom IPv6 backbone (`240e::/20`) on **May 1, 2026** (15 days before the leak)
-- Geofeed shows a router in Shanghai, China (yngp2-211, Yangpu District)
+- Geofeed shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
 - Sponsoring organization MoeDove LLC responded to abuse report with: **"To idiot haoziwan.xyz"**
+
+## Core Evidence: Attack Data Snapshot
+
+The following data was captured **during the attack** on **May 16–17, 2026** from Hurricane Electric's BGP Toolkit ([`he_as202734_20260517.log`](0-attack-evidence/he_as202734_20260517.log)):
+
+| Key Metric | Value |
+| :--- | :--- |
+| **IPv4 Prefixes Originated** | 3,948 |
+| **IPv6 Prefixes Originated** | 684 |
+| **Total Prefixes Announced** | 4,632 |
+| **RPKI Invalid (IPv4)** | 1,323 |
+| **RPKI Invalid (IPv6)** | 107 |
+| **IPv4 Address Space Claimed** | 285,767,680 IPs |
+| **Average AS Path Length (IPv4)** | 2.023 (abnormally short, indicating route manipulation) |
+| **Average AS Path Length (IPv6)** | 4.346 |
+
+> **Note:** All numbers above are sourced directly from Hurricane Electric's BGP Toolkit. The complete data is available in the log file.
 
 ## Visual Evidence: Global Routing Chaos
 
 The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `240e::/20` (China Telecom IPv6 backbone) from **May 1, 2026** (the day of the manual injection) to **May 20, 2026** (after the hijack).
 
 **What it shows:**
-- **5,504 timestamped events** were recorded within 20 days (normal for a stable prefix: <500).
-- First major route flaps started **within minutes** after the May 1 manual injection.
-- Continuous path instability during the **May 16–17 hijack window**, observed across multiple global collectors (RRC00, RRC19, RRC23, RRC24, RRC25, etc.).
+- **5,504 timestamped events** were recorded within 20 days (normal for a stable prefix: <500)
+- First major route flaps started **within minutes** after the May 1 manual injection
+- Continuous path instability during the **May 16–17 hijack window**, observed across multiple global collectors (RRC00, RRC19, RRC23, RRC24, RRC25, etc.)
 
 🔗 **Interactive BGPlay Timeline:**  
-https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26
+[https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26](https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26)
 
 > **Note:** This is a direct link to RIPE NCC's own visualization tool, using their own data. It independently confirms the abnormal routing behavior correlated with the attacker's actions.
 
@@ -33,22 +50,22 @@ All evidence in this repository was **independently collected, verified, and arc
 
 The attacker's original GitHub repositories remain publicly available at the time of this writing and have been **forked and preserved** as independent repositories under the same GitHub account (see below).
 
-This repository is **not** a direct fork of any attacker repository. It is an original evidence archive created by the investigator.
+**This repository is not a direct fork of any attacker repository. It is an original evidence archive created by the investigator.**
 
 ## Repository Structure
 
 | Directory | Contents |
 | :--- | :--- |
-| `/0-attack-evidence` | Core technical evidence (RIPE RIS logs, HE BGP data, looking glass screenshots) |
-| `/1-attacker-assets` | Additional attacker-related screenshots and data (HE snapshots, etc.) |
-| `/2-communication` | All email correspondence — abuse reports, the attacker's "To idiot" reply, community discussions |
-| `/3-ripe-ncc-interaction` | RIPE NCC tickets, compliance correspondence, screenshots |
-| `/4-3rd-party-responses` | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
-| `/5-additional-context` | WHOIS records, company background, NANOG discussion summary |
+| [`/0-attack-evidence`](0-attack-evidence) | Core technical evidence (HE BGP data, RIPE RIS logs, looking glass screenshots) |
+| [`/1-attacker-assets`](1-attacker-assets) | Attacker-related assets (HE snapshots, WHOIS records, Geofeed) |
+| [`/2-communication`](2-communication) | All email correspondence — abuse reports, the attacker's "To idiot" reply, community discussions |
+| [`/3-ripe-ncc-interaction`](3-ripe-ncc-interaction) | RIPE NCC tickets, compliance correspondence, screenshots |
+| [`/4-3rd-party-responses`](4-3rd-party-responses) | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
+| [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
 
 ## Attacker's Original Repositories (Forked & Preserved)
 
-In addition to the screenshots and data in `/1-attacker-assets`, the attacker's original GitHub repositories have been forked and preserved as independent repositories:
+In addition to the screenshots and data in [`/1-attacker-assets`](1-attacker-assets), the attacker's original GitHub repositories have been forked and preserved as independent repositories:
 
 | Original (attacker) | Forked backup (preserved) |
 | :--- | :--- |
@@ -64,8 +81,8 @@ All forks were created for archival purposes and serve as an immutable evidence 
 
 ## Related Links
 
-- **HE BGP Toolkit**: https://bgp.he.net/AS202734
-- **RIPE NCC AS202734 record**: https://apps.db.ripe.net/db-web-ui/query?searchtext=AS202734
+- **HE BGP Toolkit**: [https://bgp.he.net/AS202734](https://bgp.he.net/AS202734)
+- **RIPE NCC AS202734 record**: [https://apps.db.ripe.net/db-web-ui/query?searchtext=AS202734](https://apps.db.ripe.net/db-web-ui/query?searchtext=AS202734)
 - **NANOG discussion**: [https://seclists.org/nanog/2026/May/132](https://seclists.org/nanog/2026/May/132)
 - **RIPE NCC tickets**: #1042641, #1043090
 
