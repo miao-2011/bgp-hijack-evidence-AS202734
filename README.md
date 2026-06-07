@@ -20,7 +20,7 @@ The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `2
 - Continuous path instability during the **May 16–17 hijack window**, observed across multiple global collectors (RRC00, RRC19, RRC23, RRC24, RRC25, etc.).
 
 🔗 **Interactive BGPlay Timeline:**  
-https://stat.ripe.net/bgplay/240e::/20#starttime=1778889600&endtime=1779062399
+https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1780185599
 
 > **Note:** This is a direct link to RIPE NCC's own visualization tool, using their own data. It independently confirms the abnormal routing behavior correlated with the attacker's actions.
 ## Source
