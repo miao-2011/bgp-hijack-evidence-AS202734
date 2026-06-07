@@ -1,0 +1,101 @@
+miao@miao:~$ whois -h whois.radb.net -- '-i origin AS202734'
+route:          23.158.20.0/24
+origin:         AS202734
+descr:          Tianshome.net
+admin-c:        TIANS1-ARIN
+tech-c:         TIANS1-ARIN
+mnt-by:         MNT-JT-303
+remarks:        This object is automatically managed by ARIN
+created:        2026-05-14T00:38:46Z
+last-modified:  2026-05-14T00:38:46Z
+source:         ARIN
+rpki-ov-state:  valid
+
+route6:         2001:678:1184::/48
+descr:          Vultr Customer Route
+origin:         AS202734
+notify:         network@vultr.com
+mnt-by:         MAINT-AS20473
+changed:        network@vultr.com 20251218 #06:40:04-18000
+source:         RADB
+last-modified:  2025-12-18T11:41:53Z
+rpki-ov-state:  valid
+
+route6:         2001:678:1184::/48
+origin:         AS202734
+created:        2025-12-28T08:49:20Z
+last-modified:  2025-12-28T08:49:20Z
+source:         RIPE
+mnt-by:         JACOB-JUNQI-TIAN-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+rpki-ov-state:  valid
+
+route6:         2602:f92a:a440::/44
+origin:         AS202734
+descr:          Tianshome.net
+admin-c:        TIANS1-ARIN
+tech-c:         TIANS1-ARIN
+mnt-by:         MNT-JT-303
+created:        2026-02-04T23:09:30Z
+last-modified:  2026-02-04T23:09:30Z
+source:         ARIN
+rpki-ov-state:  valid
+
+route6:         2a0f:1cc5:1200::/40
+descr:          Vultr Customer Route
+origin:         AS202734
+notify:         network@vultr.com
+mnt-by:         MAINT-AS20473
+changed:        network@vultr.com 20251223 #06:40:04-18000
+source:         RADB
+last-modified:  2025-12-23T11:41:51Z
+rpki-ov-state:  valid
+
+route6:         2a0f:1cc5:ffff::/48
+origin:         AS202734
+created:        2026-03-19T07:57:40Z
+last-modified:  2026-03-19T07:57:40Z
+source:         RIPE
+mnt-by:         AXIVORA-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+rpki-ov-state:  not_found # No ROAs found, or RPKI validation not enabled for source
+
+route6:         2a12:cb47:ffff::/48
+origin:         AS202734
+created:        2026-04-04T07:21:23Z
+last-modified:  2026-04-04T07:21:23Z
+source:         RIPE
+mnt-by:         JIANYUELAB-STAFF-MNT
+remarks:        ****************************
+remarks:        * THIS OBJECT IS MODIFIED
+remarks:        * Please note that all data that is generally regarded as personal
+remarks:        * data has been removed from this object.
+remarks:        * To view the original object, please query the RIPE Database at:
+remarks:        * http://www.ripe.net/whois
+remarks:        ****************************
+rpki-ov-state:  valid
+
+route6:         2a14:67c3:770::/44
+descr:          Vultr Customer Route
+origin:         AS202734
+notify:         network@vultr.com
+mnt-by:         MAINT-AS20473
+changed:        network@vultr.com 20260114 #18:39:38-18000
+source:         RADB
+last-modified:  2026-01-14T23:41:26Z
+rpki-ov-state:  not_found # No ROAs found, or RPKI validation not enabled for source
+
+
+miao@miao:~$
