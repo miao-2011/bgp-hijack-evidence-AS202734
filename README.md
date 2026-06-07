@@ -10,6 +10,19 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 - Geofeed shows a router in Shanghai, China (yngp2-211, Yangpu District)
 - Sponsoring organization MoeDove LLC responded to abuse report with: **"To idiot haoziwan.xyz"**
 
+## Visual Evidence: Global Routing Chaos
+
+The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `240e::/20` (China Telecom IPv6 backbone) from **May 1, 2026** (the day of the manual injection) to **May 20, 2026** (after the hijack).
+
+**What it shows:**
+- **1,126 anomalous events** within 20 days (normal for a stable prefix: <50).
+- First major route flaps started **within minutes** after the May 1 manual injection.
+- Continuous path instability during the **May 16–17 hijack window**, observed across multiple global collectors (RRC00, RRC19, RRC23, RRC24, RRC25, etc.).
+
+🔗 **Interactive BGPlay Timeline:**  
+https://stat.ripe.net/bgplay/240e%3A%3A%2F20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26&showReannouncements=false&instant=18,1777613137
+
+> **Note:** This is a direct link to RIPE NCC's own visualization tool, using their own data. It independently confirms the abnormal routing behavior correlated with the attacker's actions.
 ## Source
 
 All evidence in this repository was **independently collected, verified, and archived** by Zhong Miao (`postmaster@haoziwan.xyz`).
