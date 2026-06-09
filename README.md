@@ -10,6 +10,20 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 - Geofeed shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
 - Sponsoring organization MoeDove LLC responded to abuse report with: **"To idiot haoziwan.xyz"**
 
+## Retaliatory Harassment: Mail Subscription Bombing
+
+Following the publication of this repository, a mail subscription bombing attack was launched against email addresses associated with this investigation.
+
+**Incident Summary:**
+- **Start time:** June 9, 2026, 22:52 UTC
+- **Targets:** `postmaster@haoziwan.xyz` → then `abuse@haoziwan.xyz` added at 01:09 UTC
+- **Volume:** 60+ confirmation emails within 14 minutes
+- **Routing:** Tunneled through Cloudflare infrastructure (egress IPs: `104.28.160.168`, `104.28.159.154`)
+
+Both targeted email addresses are directly linked to this evidence repository and prior correspondence with the AS202734 operator.
+
+**Full documentation:** Timeline, technical details, and preserved raw email samples are available in [`/6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md`](6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md)
+
 ## Core Evidence: Attack Data Snapshot
 
 The following data was captured **during the attack** on **May 16–17, 2026** from Hurricane Electric's BGP Toolkit ([`he_as202734_20260517.log`](0-attack-evidence/he_as202734_20260517.log)):
@@ -62,6 +76,7 @@ The attacker's original GitHub repositories remain publicly available at the tim
 | [`/3-ripe-ncc-interaction`](3-ripe-ncc-interaction) | RIPE NCC tickets, compliance correspondence, screenshots |
 | [`/4-3rd-party-responses`](4-3rd-party-responses) | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
 | [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
+| [`/6-retaliation-evidence`](6-retaliation-evidence) | Mail subscription bombing documentation, timeline, and raw email samples |
 
 ## Attacker's Original Repositories (Forked & Preserved)
 
