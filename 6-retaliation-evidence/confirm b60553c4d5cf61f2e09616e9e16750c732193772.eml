@@ -1,0 +1,76 @@
+Return-Path: <anu.malaysia.institute-bounces@anu.edu.au>
+X-Original-To: postmaster@haoziwan.xyz
+Delivered-To: miao@haoziwan.xyz
+Received: from aliyun.haoziwan.xyz (unknown [43.108.43.216])
+	by haoziwan.xyz (Postfix) with ESMTPSA id 7FB69480026
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 14:56:38 +0000 (UTC)
+Received: from mail2-drop-p1.anu.edu.au (mail2-drop-p1.anu.edu.au [130.56.64.27])
+	by aliyun.haoziwan.xyz (Postfix) with ESMTP id F08781200C7
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 22:56:35 +0800 (CST)
+Received: from mail3-pmx-p1.anu.edu.au (mail3-pmx-p1.anu.edu.au [10.40.70.23])
+	by mail2-drop-p1.anu.edu.au (8.16.1/8.16.1) with ESMTP id 659EuYwj2746761
+	for <postmaster@haoziwan.xyz>; Wed, 10 Jun 2026 00:56:34 +1000
+Received: from mail3-pmx-p1.anu.edu.au (localhost [127.0.0.1])
+	by localhost (Postfix) with SMTP id 2AC994771496
+	for <postmaster@haoziwan.xyz>; Wed, 10 Jun 2026 00:56:34 +1000 (AEST)
+Received: from mail2-smtp-p2.anu.edu.au (snatpool01-5.anu.edu.au [130.56.66.109])
+	(using TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+	 key-exchange ECDHE (P-256) server-signature RSA-PSS (2048 bits) server-digest SHA256)
+	(No client certificate requested)
+	by mail3-pmx-p1.anu.edu.au (Postfix) with ESMTPS id 1BB924771493
+	for <postmaster@haoziwan.xyz>; Wed, 10 Jun 2026 00:56:27 +1000 (AEST)
+Received: from mailman2-p1.anu.edu.au (mailman.anu.edu.au [130.56.60.3])
+	by mail2-smtp-p2.anu.edu.au (Postfix) with ESMTP id F2F6C3E80
+	for <postmaster@haoziwan.xyz>; Wed, 10 Jun 2026 00:56:26 +1000 (AEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=anu.edu.au; s=mail;
+	t=1781016987; bh=2pcAI5Wq+Ik8p6yyWsgrmw6D0UXiTuSCVHYVQ3GzIHU=;
+	h=From:To:Subject:Reply-To:Date:List-Id:From;
+	b=JMpE8ESV8eJjtbcbY2xyqqMn6EUCNZSleEFvLQKcOh3rqYyeF1mNdKNx2d6pDpoMd
+	 01LQdh1ViDA4+jZRloqsnmEHCxOeze2x95TyAm91lMFuqm41XQYOhvy7Wf8ENz7Pnm
+	 xo9vs8+RhxSjGofjnN3fKjJkLHi9sf1hMz7eOSX0=
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+From: anu.malaysia.institute-request@anu.edu.au
+To: postmaster@haoziwan.xyz
+Subject: confirm b60553c4d5cf61f2e09616e9e16750c732193772
+Reply-To: anu.malaysia.institute-request@anu.edu.au
+Auto-Submitted: auto-generated
+Message-ID: <mailman.0.1781016771.101054.anu.malaysia.institute@anu.edu.au>
+Date: Wed, 10 Jun 2026 00:52:51 +1000
+Precedence: bulk
+X-BeenThere: anu.malaysia.institute@anu.edu.au
+X-Mailman-Version: 2.1.15
+List-Id: <anu.malaysia.institute.anu.edu.au>
+X-List-Administrivia: yes
+Errors-To: anu.malaysia.institute-bounces@anu.edu.au
+Sender: "ANU.Malaysia.Institute" <anu.malaysia.institute-bounces@anu.edu.au>
+X-PMX-Version: 6.4.9.2830568, Antispam-Engine: 2.7.2.2107409, Antispam-Data: 2024.1.27.235115, AntiVirus-Engine: 6.0.2, AntiVirus-Data: 2024.1.26.602001 internal
+X-OriginatorOrg: anu.edu.au
+X-PMX-Info: unscannable
+
+Mailing list subscription confirmation notice for mailing list
+ANU.Malaysia.Institute
+
+We have received a request from 104.28.159.154 for subscription of
+your email address, "postmaster@haoziwan.xyz", to the
+anu.malaysia.institute@anu.edu.au mailing list.  To confirm that you
+want to be added to this mailing list, simply reply to this message,
+keeping the Subject: header intact.  Or visit this web page:
+
+    https://mailman.anu.edu.au/mailman/confirm/anu.malaysia.institute/b60553c4d5cf61f2e09616e9e16750c732193772
+
+
+Or include the following line -- and only the following line -- in a
+message to anu.malaysia.institute-request@anu.edu.au:
+
+    confirm b60553c4d5cf61f2e09616e9e16750c732193772
+
+Note that simply sending a `reply' to this message should work from
+most mail readers, since that usually leaves the Subject: line in the
+right form (additional "Re:" text in the Subject: is okay).
+
+If you do not wish to be subscribed to this list, please simply
+disregard this message.  If you think you are being maliciously
+subscribed to the list, or have any other questions, send them to
+anu.malaysia.institute-owner@anu.edu.au.

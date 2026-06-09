@@ -1,0 +1,65 @@
+Return-Path: <spce-dev-bounces@lists.sipwise.com>
+X-Original-To: abuse@haoziwan.xyz
+Delivered-To: miao@haoziwan.xyz
+Received: from aliyun.haoziwan.xyz (unknown [43.108.43.216])
+	by haoziwan.xyz (Postfix) with ESMTPSA id E05BC4849AF
+	for <abuse@haoziwan.xyz>; Tue,  9 Jun 2026 17:09:18 +0000 (UTC)
+Received: from host5.emwd.com (host5.emwd.com [45.33.99.11])
+	by aliyun.haoziwan.xyz (Postfix) with ESMTP id C2CC31200C7
+	for <abuse@haoziwan.xyz>; Wed, 10 Jun 2026 01:09:17 +0800 (CST)
+Received: from [::1] (port=58448 helo=host5.emwd.com)
+	by host5.emwd.com with esmtp (Exim 4.99.4)
+	(envelope-from <spce-dev-bounces@lists.sipwise.com>)
+	id 1wWzx0-00000008kLI-25s1
+	for abuse@haoziwan.xyz;
+	Tue, 09 Jun 2026 13:09:16 -0400
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+From: spce-dev-request@lists.sipwise.com
+To: abuse@haoziwan.xyz
+Subject: confirm f5ff6e1a23619a084ac24b54203eaee5df37fabb
+Reply-To: spce-dev-request@lists.sipwise.com
+Auto-Submitted: auto-generated
+Message-ID: 
+ <mailman.0.1781024956.2084764.spce-dev_lists.sipwise.com@lists.sipwise.com>
+Date: Tue, 09 Jun 2026 13:09:16 -0400
+Precedence: bulk
+X-BeenThere: spce-dev@lists.sipwise.com
+X-Mailman-Version: 2.2.0
+List-Id: <spce-dev.lists.sipwise.com>
+X-List-Administrivia: yes
+Errors-To: spce-dev-bounces@lists.sipwise.com
+Sender: "Spce-dev" <spce-dev-bounces@lists.sipwise.com>
+X-AntiAbuse: This header was added to track abuse, please include it with any abuse report
+X-AntiAbuse: Primary Hostname - host5.emwd.com
+X-AntiAbuse: Original Domain - haoziwan.xyz
+X-AntiAbuse: Originator/Caller UID/GID - [47 12] / [47 12]
+X-AntiAbuse: Sender Address Domain - lists.sipwise.com
+X-Get-Message-Sender-Via: host5.emwd.com: acl_c_authenticated_local_user: mailman/mailman
+X-Authenticated-Sender: host5.emwd.com: mailman@lists.sipwise.com
+X-Source: 
+X-Source-Args: 
+X-Source-Dir: 
+
+TWFpbGluZyBsaXN0IHN1YnNjcmlwdGlvbiBjb25maXJtYXRpb24gbm90aWNlIGZvciBtYWlsaW5n
+IGxpc3QKU3BjZS1kZXYKCldlIGhhdmUgcmVjZWl2ZWQgYSByZXF1ZXN0IGZyb20gMTA0LjI4LjE2
+MC4xNjggZm9yIHN1YnNjcmlwdGlvbiBvZgp5b3VyIGVtYWlsIGFkZHJlc3MsICJhYnVzZUBoYW96
+aXdhbi54eXoiLCB0byB0aGUKc3BjZS1kZXZAbGlzdHMuc2lwd2lzZS5jb20gbWFpbGluZyBsaXN0
+LiAgVG8gY29uZmlybSB0aGF0IHlvdSB3YW50IHRvCmJlIGFkZGVkIHRvIHRoaXMgbWFpbGluZyBs
+aXN0LCBzaW1wbHkgcmVwbHkgdG8gdGhpcyBtZXNzYWdlLCBrZWVwaW5nCnRoZSBTdWJqZWN0OiBo
+ZWFkZXIgaW50YWN0LiAgT3IgdmlzaXQgdGhpcyB3ZWIgcGFnZToKCiAgICBodHRwczovL2xpc3Rz
+LnNpcHdpc2UuY29tL21haWxtYW4vY29uZmlybS9zcGNlLWRldl9saXN0cy5zaXB3aXNlLmNvbS9m
+NWZmNmUxYTIzNjE5YTA4NGFjMjRiNTQyMDNlYWVlNWRmMzdmYWJiCgoKT3IgaW5jbHVkZSB0aGUg
+Zm9sbG93aW5nIGxpbmUgLS0gYW5kIG9ubHkgdGhlIGZvbGxvd2luZyBsaW5lIC0tIGluIGEKbWVz
+c2FnZSB0byBzcGNlLWRldi1yZXF1ZXN0QGxpc3RzLnNpcHdpc2UuY29tOgoKICAgIGNvbmZpcm0g
+ZjVmZjZlMWEyMzYxOWEwODRhYzI0YjU0MjAzZWFlZTVkZjM3ZmFiYgoKTm90ZSB0aGF0IHNpbXBs
+eSBzZW5kaW5nIGEgYHJlcGx5JyB0byB0aGlzIG1lc3NhZ2Ugc2hvdWxkIHdvcmsgZnJvbQptb3N0
+IG1haWwgcmVhZGVycywgc2luY2UgdGhhdCB1c3VhbGx5IGxlYXZlcyB0aGUgU3ViamVjdDogbGlu
+ZSBpbiB0aGUKcmlnaHQgZm9ybSAoYWRkaXRpb25hbCAiUmU6IiB0ZXh0IGluIHRoZSBTdWJqZWN0
+OiBpcyBva2F5KS4KCklmIHlvdSBkbyBub3Qgd2lzaCB0byBiZSBzdWJzY3JpYmVkIHRvIHRoaXMg
+bGlzdCwgcGxlYXNlIHNpbXBseQpkaXNyZWdhcmQgdGhpcyBtZXNzYWdlLiAgSWYgeW91IHRoaW5r
+IHlvdSBhcmUgYmVpbmcgbWFsaWNpb3VzbHkKc3Vic2NyaWJlZCB0byB0aGUgbGlzdCwgb3IgaGF2
+ZSBhbnkgb3RoZXIgcXVlc3Rpb25zLCBzZW5kIHRoZW0gdG8Kc3BjZS1kZXYtb3duZXJAbGlzdHMu
+c2lwd2lzZS5jb20uCg==
+

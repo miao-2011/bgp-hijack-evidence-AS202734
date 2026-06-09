@@ -1,0 +1,87 @@
+Return-Path: <hackers-jp-bounces@ml.postgresql.jp>
+X-Original-To: postmaster@haoziwan.xyz
+Delivered-To: miao@haoziwan.xyz
+Received: from aliyun.haoziwan.xyz (unknown [43.108.43.216])
+	by haoziwan.xyz (Postfix) with ESMTPSA id 5E5584849AF
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 17:14:28 +0000 (UTC)
+Received: from kiwi.interwiz.jp (kiwi.interwiz.jp [54.238.217.44])
+	by aliyun.haoziwan.xyz (Postfix) with ESMTP id BBB131200F2
+	for <postmaster@haoziwan.xyz>; Wed, 10 Jun 2026 01:14:27 +0800 (CST)
+Received: from ml.postgresql.jp (sub0000546995.hmk-temp.com [153.122.62.213])
+	(using TLSv1.2 with cipher DHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by kiwi.interwiz.jp (Postfix) with ESMTPS id 7C0DB64005
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 17:14:27 +0000 (UTC)
+Authentication-Results: kiwi.interwiz.jp; arc=none smtp.remote-ip=153.122.62.213
+ARC-Seal: i=1; a=rsa-sha256; d=interwiz.jp; s=default; t=1781025267; cv=none;
+	b=sGMdNXetYjx046Fd37RcJBhun7szfNDNMCb2FlgZOeo+sqGbR+9wrNPse7AH51M9UHMqo1U9LlHCT+jZHQ2nP75i3gL3klqQmufB0jNAPZy+ja/l3RlANqG+fGN4+mXRjMpxL17/8nw8L+7Ug4cqNxW+0aKQ5ZdXrvL4adRHuMQ=
+ARC-Message-Signature: i=1; a=rsa-sha256; d=interwiz.jp; s=default;
+	t=1781025267; c=relaxed/relaxed;
+	bh=70NVRmf6p0+fPbT3t87/AMIbY82E+lH2r0R5wH/0hmU=;
+	h=DKIM-Signature:MIME-Version:From:To:Subject:Message-ID:Date; b=biV50DULzCKsXOvKue9yxtvgBQjwebMPvM1bB0lXp3JA+wBAOLyFyX5Le+aNFcftPROtc32Neb11xkQa2RJaMehL5jbNfNuWtEiYBGUqzO85ofy1RScZMYw4QrnkCGYkeiiUNWG8xP3CJlEDhiDortaa3V+GPMT3xy4ZnjwH3qk=
+ARC-Authentication-Results: i=1; kiwi.interwiz.jp; dkim=pass (1024-bit key) header.d=ml.postgresql.jp header.i=@ml.postgresql.jp header.b=TV/79FBG
+DKIM-Filter: OpenDKIM Filter v2.11.0 kiwi.interwiz.jp 7C0DB64005
+Authentication-Results: kiwi.interwiz.jp;
+	dkim=pass (1024-bit key) header.d=ml.postgresql.jp header.i=@ml.postgresql.jp header.b="TV/79FBG"
+Received: from localhost (localhost [127.0.0.1])
+	by ml.postgresql.jp (Postfix) with ESMTP id 6CB97583CFE
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 17:14:27 +0000 (UTC)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=ml.postgresql.jp;
+	 h=list-id:precedence:date:date:message-id:reply-to:subject
+	:subject:from:from:content-transfer-encoding:content-type
+	:content-type:mime-version:received:received; s=default; t=
+	1781025266; x=1781889267; bh=vB8YVLOTy+D1HdzITXuWyff0aRygzI+AF/U
+	h3tmS6U0=; b=TV/79FBGwfyCb/FRzMfAcB8Mwd5bx9K6Dh8HgsTdowIG/cSjt+E
+	4qlYrVw5SuQw8SRTAoFe2ieZVLKK1N3A8uCw+3uZLQu/0j+DaJSGG9LmcUTBmBfl
+	iIqrjoeKNbMs3/no2moAk/oYFVh/HhMCtSyAtuc48DDx2nQBTOfXWTqA=
+X-Virus-Scanned: amavisd-new at ml.postgresql.jp
+Received: from ml.postgresql.jp ([127.0.0.1])
+	by localhost (ml.postgresql.jp [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Lz334092kBB7 for <postmaster@haoziwan.xyz>;
+	Tue,  9 Jun 2026 17:14:26 +0000 (UTC)
+Received: from ml.postgresql.jp (localhost [127.0.0.1])
+	by ml.postgresql.jp (Postfix) with ESMTP id 2629E582BC1
+	for <postmaster@haoziwan.xyz>; Tue,  9 Jun 2026 17:14:26 +0000 (UTC)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+From: hackers-jp-request@ml.postgresql.jp
+To: postmaster@haoziwan.xyz
+Subject: confirm 7f20b254d3aefde67754899fb80b91af9e1048e5
+Reply-To: hackers-jp-request@ml.postgresql.jp
+Message-ID: <mailman.0.1781025264.18240.hackers-jp@ml.postgresql.jp>
+Date: Tue, 09 Jun 2026 17:14:24 +0000
+Precedence: bulk
+X-BeenThere: hackers-jp@ml.postgresql.jp
+X-Mailman-Version: 2.1.12
+List-Id: =?iso-2022-jp?b?GyRCS1wySBsoQnBnc3FsLWhhY2tlcnMbJEIkSyREJCQkRkZ8S1w4bCRHNQ==?=
+	=?iso-2022-jp?b?RE9AJDkkaxsoQk1M?= <hackers-jp.ml.postgresql.jp>
+X-List-Administrivia: yes
+Sender: hackers-jp-bounces@ml.postgresql.jp
+Errors-To: hackers-jp-bounces@ml.postgresql.jp
+
+Mailing list subscription confirmation notice for mailing list
+hackers-jp
+
+We have received a request from 172.22.0.4 for subscription of your
+email address, "postmaster@haoziwan.xyz", to the
+hackers-jp@ml.postgresql.jp mailing list.  To confirm that you want to
+be added to this mailing list, simply reply to this message, keeping
+the Subject: header intact.  Or visit this web page:
+
+    https://ml.postgresql.jp/mailman/confirm/hackers-jp/7f20b254d3aefde67754899fb80b91af9e1048e5
+
+
+Or include the following line -- and only the following line -- in a
+message to hackers-jp-request@ml.postgresql.jp:
+
+    confirm 7f20b254d3aefde67754899fb80b91af9e1048e5
+
+Note that simply sending a `reply' to this message should work from
+most mail readers, since that usually leaves the Subject: line in the
+right form (additional "Re:" text in the Subject: is okay).
+
+If you do not wish to be subscribed to this list, please simply
+disregard this message.  If you think you are being maliciously
+subscribed to the list, or have any other questions, send them to
+hackers-jp-owner@ml.postgresql.jp.
