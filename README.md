@@ -10,19 +10,27 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 - Geofeed shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
 - Sponsoring organization MoeDove LLC responded to abuse report with: **"To idiot haoziwan.xyz"**
 
-## Retaliatory Harassment: Mail Subscription Bombing
+## Retaliatory Actions
 
-Following the publication of this repository, a mail subscription bombing attack was launched against email addresses associated with this investigation.
+### Confirmed: Email Spoofing Attempt
+
+Following the abuse report and publication of this repository, MoeDove LLC (`moedove.com`) attempted to forge `haoziwan.xyz` as the From domain, sending 12 spoofed emails via Google infrastructure (IP `209.85.220.69`). All attempts were rejected by DMARC policy (`p=reject`).
+
+**Full documentation:** [`/6-retaliation-evidence/SPOOFING_ATTEMPT.md`](6-retaliation-evidence/SPOOFING_ATTEMPT.md)
+
+### Suspected: Mail Subscription Bombing (Source Unconfirmed)
+
+Beginning on June 9, 2026 at 22:52 UTC, a mail subscription bombing attack was launched against email addresses associated with this investigation.
 
 **Incident Summary:**
 - **Start time:** June 9, 2026, 22:52 UTC
 - **Targets:** `postmaster@haoziwan.xyz` → then `abuse@haoziwan.xyz` added at 01:09 UTC
-- **Volume:** 60+ confirmation emails within 14 minutes
+- **Volume:** 100+ confirmation emails within 14 minutes
 - **Routing:** Tunneled through Cloudflare infrastructure (egress IPs: `104.28.160.168`, `104.28.159.154`)
 
-Both targeted email addresses are directly linked to this evidence repository and prior correspondence with the AS202734 operator.
+> **Attribution Note:** No direct evidence establishes that the party behind the AS202734 incident (MoeDove LLC) is also responsible for the subscription bombing. The temporal proximity is noted for completeness only.
 
-**Full documentation:** Timeline, technical details, and preserved raw email samples are available in [`/6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md`](6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md)
+**Full documentation:** [`/6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md`](6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md)
 
 ## Core Evidence: Attack Data Snapshot
 
@@ -76,7 +84,7 @@ The attacker's original GitHub repositories remain publicly available at the tim
 | [`/3-ripe-ncc-interaction`](3-ripe-ncc-interaction) | RIPE NCC tickets, compliance correspondence, screenshots |
 | [`/4-3rd-party-responses`](4-3rd-party-responses) | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
 | [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
-| [`/6-retaliation-evidence`](6-retaliation-evidence) | Mail subscription bombing documentation, timeline, and raw email samples |
+| [`/6-retaliation-evidence`](6-retaliation-evidence) | Retaliatory harassment — confirmed email spoofing (MoeDove LLC) + suspected mail subscription bombing (source unconfirmed, timeline documented) |
 
 ## Attacker's Original Repositories (Forked & Preserved)
 
