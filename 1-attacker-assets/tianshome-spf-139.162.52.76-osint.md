@@ -28,38 +28,29 @@ tianshome.com.          1       IN      TXT     "apple-domain=TY6fPyttaG6qghRp"
 ;; SERVER: 223.6.6.6#53(223.6.6.6) (UDP)
 ;; WHEN: Wed Jun 10 13:38:24 UTC 2026
 ;; MSG SIZE  rcvd: 232
+```
 
-## IP: 139.162.52.76
+IP: 139.162.52.76
 
-| Field | Value |
-| :--- | :--- |
-| Provider | Linode (Akamai Connected Cloud) |
-| Location | Singapore (sg-04) |
-| City | Singapore |
-| ASN | AS63949 |
-| Organization | 139.162.0.0/16 |
-| ISP | Akamai Connected Cloud |
-| Last Seen | June 9, 2026 |
-| Tags | cloud |
+Field	Value
+Provider	Linode (Akamai Connected Cloud)
+Location	Singapore (sg-04)
+City	Singapore
+ASN	AS63949
+Organization	139.162.0.0/16
+ISP	Akamai Connected Cloud
+Last Seen	June 9, 2026
+Tags	cloud
 
-### Hostnames
+Hostnames
+sgp.139-162-52-76.linode.abayip.cf
 
-| Hostname |
-| :--- |
-| sgp.139-162-52-76.linode.abayip.cf |
+Domains
+abayip.cf
 
-### Domains
-
-| Domain |
-| :--- |
-| abayip.cf |
-
-### Open Ports
-
-| Port | Service | Status / Notes |
-| :--- | :--- | :--- |
-| 21/tcp | Pure-FTPd | Private system, no anonymous login |
-| 123/udp | NTP | Public NTP service (stratum 3) |
-| 443/tcp | HTTPS | Active |
-| 9999/tcp | HTTP | Returns 503 Service Unavailable |
-| 19999/tcp | Netdata Dashboard | Publicly accessible (HTTP 200) |
+Open Ports
+21/tcp	Pure-FTPd	Private system, no anonymous login
+123/udp	NTP	Public NTP service (stratum 3)
+443/tcp	HTTPS	Active
+9999/tcp	HTTP	Returns 503 Service Unavailable
+19999/tcp	Netdata Dashboard	Publicly accessible (HTTP 200)
