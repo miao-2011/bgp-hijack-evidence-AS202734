@@ -4,7 +4,7 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 
 ## Key Facts
 
-- **4,622 prefixes** were exported to Hurricane Electric's route collector
+- **4,632 prefixes** were exported to Hurricane Electric's route collector
 - Affected prefixes include: China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and more
 - The operator manually injected China Telecom IPv6 backbone (`240e::/20`) on **May 1, 2026** (15 days before the leak)
 - Geofeed shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
