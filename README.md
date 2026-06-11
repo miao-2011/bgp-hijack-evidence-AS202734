@@ -2,13 +2,38 @@
 
 This repository is an archive of evidence regarding the BGP route leak/hijacking incident on **May 16–17, 2026**, involving AS202734 (registered to Junqi Tian / Tianshome.net), sponsored by MoeDove LLC.
 
+---
+
+## TL;DR
+
+**One RIPE NCC member (AS202734) + two affiliated ASes (AS402335, AS402333) intentionally hijacked 4,632 prefixes including China Telecom's IPv6 backbone. The sponsoring LIR responded to abuse with "To idiot". All evidence independently archived.**
+
+---
+
 ## Key Facts
 
 - **4,632 prefixes** were exported to Hurricane Electric's route collector
-- Affected prefixes include: China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and more
-- The operator manually injected China Telecom IPv6 backbone (`240e::/20`) on **May 1, 2026** (15 days before the leak)
-- Geofeed shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
-- Sponsoring organization MoeDove LLC responded to abuse report with: **"To idiot haoziwan.xyz"**
+- **Affected prefixes include:** China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and more
+- The operator **manually injected China Telecom IPv6 backbone (`240e::/20`)** on **May 1, 2026** (15 days before the leak)
+- **Geofeed** shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
+- Sponsoring organization **MoeDove LLC** responded to abuse report with: **"To idiot haoziwan.xyz"**
+
+---
+
+## Multi-AS Attack Infrastructure
+
+Route Views official collector (`route-views.routeviews.org`) captured the BGP routing table entry for `23.158.20.0/24` (a prefix legitimately owned by AS202734). The output reveals that **AS202734, AS402335, and AS402333 appear in fixed order** across multiple independent upstream paths.
+
+This fixed AS_PATH order indicates a deliberately configured routing policy, not random or transient path selection. The same infrastructure was used to announce both legitimate prefixes and the 4,632 hijacked prefixes documented above.
+
+**Key implication:** The attacker operates a multi-AS, redundantly upstreamed BGP infrastructure with fixed routing policies — capabilities that are **incompatible with any claim of accidental misconfiguration**. The same AS_PATH engineering observed here was used to announce the 4,632 hijacked prefixes.
+
+**Raw output (full `show ip bgp` command result):**  
+[`/1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt`](1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt)
+
+**Verification:** Any party may independently query Route Views or review the archived raw output.
+
+---
 
 ## Retaliatory Actions
 
@@ -32,6 +57,8 @@ Beginning on June 9, 2026 at 22:52 UTC, a mail subscription bombing attack was l
 
 **Full documentation:** [`/6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md`](6-retaliation-evidence/MAIL_SUBSCRIPTION_BOMBING.md)
 
+---
+
 ## Core Evidence: Attack Data Snapshot
 
 The following data was captured **during the attack** on **May 16–17, 2026** from Hurricane Electric's BGP Toolkit ([`he_as202734_20260517.log`](0-attack-evidence/he_as202734_20260517.log)):
@@ -48,6 +75,8 @@ The following data was captured **during the attack** on **May 16–17, 2026** f
 | **Average AS Path Length (IPv6)** | 4.346 |
 
 > **Note:** All numbers above are sourced directly from Hurricane Electric's BGP Toolkit. The complete data is available in the log file.
+
+---
 
 ## Visual Evidence: Global Routing Chaos
 
@@ -66,7 +95,9 @@ The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `2
 **Raw Data:**  
 The complete BGPlay JSON export (5,504 timestamped events) is available in the repository at [`/0-attack-evidence/bgplay-240e-may2026.json`](0-attack-evidence/bgplay-240e-may2026.json).
 
-## Source
+---
+
+## Source & Independence Statement
 
 All evidence in this repository was **independently collected, verified, and archived** by Zhong Miao (`postmaster@haoziwan.xyz`).
 
@@ -74,17 +105,26 @@ The attacker's original GitHub repositories remain publicly available at the tim
 
 **This repository is not a direct fork of any attacker repository. It is an original evidence archive created by the investigator.**
 
+|                 |                      |
+|-----------------|----------------------|
+| **Investigator** | Zhong Miao           |
+| **Contact**      | postmaster@haoziwan.xyz |
+
+---
+
 ## Repository Structure
 
 | Directory | Contents |
 | :--- | :--- |
 | [`/0-attack-evidence`](0-attack-evidence) | Core technical evidence (HE BGP data, RIPE RIS logs, looking glass screenshots) |
-| [`/1-attacker-assets`](1-attacker-assets) | Attacker-related assets (HE snapshots, WHOIS records, Geofeed) |
+| [`/1-attacker-assets`](1-attacker-assets) | Attacker-related assets (HE snapshots, WHOIS records, Geofeed, Route Views CLI output) |
 | [`/2-communication`](2-communication) | All email correspondence — abuse reports, the attacker's "To idiot" reply, community discussions |
 | [`/3-ripe-ncc-interaction`](3-ripe-ncc-interaction) | RIPE NCC tickets, compliance correspondence, screenshots |
 | [`/4-3rd-party-responses`](4-3rd-party-responses) | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
 | [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
 | [`/6-retaliation-evidence`](6-retaliation-evidence) | Retaliatory harassment — confirmed email spoofing (MoeDove LLC) + suspected mail subscription bombing (source unconfirmed, timeline documented) |
+
+---
 
 ## Attacker's Original Repositories (Forked & Preserved)
 
@@ -102,6 +142,8 @@ In addition to the screenshots and data in [`/1-attacker-assets`](1-attacker-ass
 
 All forks were created for archival purposes and serve as an immutable evidence record.
 
+---
+
 ## Related Links
 
 - **HE BGP Toolkit**: [https://bgp.he.net/AS202734](https://bgp.he.net/AS202734)
@@ -109,13 +151,19 @@ All forks were created for archival purposes and serve as an immutable evidence 
 - **NANOG discussion**: [https://seclists.org/nanog/2026/May/132](https://seclists.org/nanog/2026/May/132)
 - **RIPE NCC tickets**: #1042641, #1043090
 
-## License
+---
+
+## License & Usage
 
 © 2026 Zhong Miao. All rights reserved.
 
-This is an **evidence archive**, not an open-source project.
+This repository constitutes an **evidence archive**, not an open-source software project.
 
-- You may **view, link to, and cite** this repository for legitimate purposes (research, journalism, legal proceedings).
-- You may **NOT copy, modify, redistribute, or commercially exploit** any part of this evidence without permission.
+**Permitted:**  
+Viewing, citation, and linking for legitimate purposes (security research, journalism, regulatory proceedings)
 
-For inquiries: `postmaster@haoziwan.xyz`
+**Not permitted:**  
+Copying, modifying, redistributing, or commercial exploitation of any part of this archive without explicit permission.
+
+For inquiries or verification requests:  
+**postmaster@haoziwan.xyz**
