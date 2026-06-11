@@ -120,7 +120,7 @@ The attacker's original GitHub repositories remain publicly available at the tim
 | [`/1-attacker-assets`](1-attacker-assets) | Attacker-related assets (HE snapshots, WHOIS records, Geofeed, Route Views CLI output) |
 | [`/2-communication`](2-communication) | All email correspondence — abuse reports, the attacker's "To idiot" reply, community discussions |
 | [`/3-ripe-ncc-interaction`](3-ripe-ncc-interaction) | RIPE NCC tickets, compliance correspondence, screenshots |
-| [`/4-3rd-party-responses`](4-3rd-party-responses) | Official replies from Alibaba Cloud, Huawei Cloud, CNCERT, etc. (partial/pending) |
+| [`/4-moedove-identity`](4-moedove-identity) | MoeDove LLC — upstream/sponsor identity and assets (ToS, website, GitHub PRs) |
 | [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
 | [`/6-retaliation-evidence`](6-retaliation-evidence) | Retaliatory harassment — confirmed email spoofing (MoeDove LLC) + suspected mail subscription bombing (source unconfirmed, timeline documented) |
 
