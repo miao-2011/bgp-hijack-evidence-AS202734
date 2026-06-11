@@ -1,0 +1,31 @@
+route-views>show ip bgp 23.158.20.0/24
+BGP routing table entry for 23.158.20.0/24, version 1192568159
+Paths: (16 available, best #16, table default)
+  Not advertised to any peer
+  Refresh Epoch 1
+  3333 12859 20473 202734 402335 402333
+    193.0.0.56 from 193.0.0.56 (193.0.0.56)
+      Origin IGP, localpref 100, valid, external
+      Community: 12859:1015 12859:1100 12859:1667 20473:22 20473:4000 65520:2403
+      unknown transitive attribute: flag 0xE0 type 0x20 length 0x60
+        value 0000 1A27 0000 0777 0000 0059 0000 1A27
+              0000 0778 0000 0000 0000 1A27 0000 0779
+              0000 0114 0000 1A27 0000 077A 0000 0096
+              0000 4FF9 0000 0000 BBC5 661A 0000 4FF9
+              0000 1770 0000 1EF2 0000 4FF9 0000 1773
+              0000 0DA3 0003 17EE 0000 11D1 0000 FC03
+
+      path 7F15AC2F6A98 RPKI State valid
+      rx pathid: 0, tx pathid: 0
+  Refresh Epoch 1
+  8283 2914 20473 202734 402335 402333
+    94.142.247.3 from 94.142.247.3 (94.142.247.3)
+      Origin IGP, localpref 100, valid, external
+      Community: 2914:410 2914:1201 2914:2202 2914:3200 8283:1 8283:101 8283:102 20473:22 20473:4000
+      unknown transitive attribute: flag 0xE0 type 0x20 length 0x60
+        value 0000 205B 0000 0000 0000 0001 0000 205B
+              0000 0005 0000 0001 0000 205B 0000 0005
+              0000 0002 0000 205B 0000 0008 0000 001A
+              0000 4FF9 0000 0000 BBC5 661A 0000 4FF9
+              0000 1770 0000 1EF2 0000 4FF9 0000 1773
+ --More--
