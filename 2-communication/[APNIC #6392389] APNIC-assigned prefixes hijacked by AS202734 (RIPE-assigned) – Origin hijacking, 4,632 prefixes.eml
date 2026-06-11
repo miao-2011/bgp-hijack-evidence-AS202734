@@ -1,0 +1,185 @@
+Return-Path: <helpdesk@apnic.net>
+X-Original-To: abuse@haoziwan.xyz
+Delivered-To: miao@haoziwan.xyz
+Received: from aliyun.haoziwan.xyz (unknown [43.108.43.216])
+	by haoziwan.xyz (Postfix) with ESMTPSA id 49735485214
+	for <abuse@haoziwan.xyz>; Thu, 11 Jun 2026 06:06:29 +0000 (UTC)
+Received: from ia-mailgw.apnic.net (ia-mailgw.apnic.net [203.119.110.25])
+	by aliyun.haoziwan.xyz (Postfix) with ESMTP id EFC3712004C
+	for <abuse@haoziwan.xyz>; Thu, 11 Jun 2026 14:06:26 +0800 (CST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=apnic.net; s=mailgw2;
+	h=mime-version:date:content-transfer-encoding:content-type:to:message-id:
+	 references:in-reply-to:reply-to:from:subject:from;
+	bh=MjnwT8mtzC4pa3VFcY6wZ8BJoDR9XhdIK2rPccjSKd0=;
+	b=QL3Ge4cGLj/W7rO7m5BODRHyPYLdV/qUepGFps5bGQ079esKhPEGEYGe3z9x0KuODstddoF6wJHuN
+	 /XHtbxlJeYLcX23GxQR194C5wDggO5CFDmqAzZNF3J27lVZRSZkE1Fv5ziCsLsG1BHeovUUmLq1mO1
+	 vV4cPU7IfU1KHyTbjRCQoicZtMHByrwZQFRD2w874Ao/zuOurG2U8e8Mdla6zceFIT4rru6wQdigZR
+	 roseSILL8bOuXksAMoShX9eLpDtjA2lbHnN6Ojf/JkGoLY+V53XJj0+eQl48oV1kOD2o2xRkG+6xPv
+	 OG0YfiMd9FmjFINilqfiaqQi8zKlwKA==
+Received: from rt-el9.apnic.int (unknown [10.2.200.24])
+	by ia-mailgw.apnic.net (Halon) with ESMTPS
+	id a71d56ed-655b-11f1-a3af-005056b6f213;
+	Thu, 11 Jun 2026 16:06:24 +1000 (AEST)
+Received: by rt-el9.apnic.int (Postfix, from userid 48)
+	id 811A11863C46; Thu, 11 Jun 2026 16:06:14 +1000 (AEST)
+Subject: =?UTF-8?B?W0FQTklDICM2MzkyMzg5XSBBUE5JQy1hc3NpZ25lZCBwcmVmaXhlcyBoaWph?= =?UTF-8?B?Y2tlZCBieSBBUzIwMjczNCAoUklQRS1hc3NpZ25lZCkg4oCTIE9yaWdpbiBo?= =?UTF-8?B?aWphY2tpbmcsIDQsNjMyIHByZWZpeGVz?=
+From: "Lu Zhang via RT" <helpdesk@apnic.net>
+Reply-To: helpdesk@apnic.net
+In-Reply-To: <556c1f86bc27b7b4f10fb949e4751989@haoziwan.xyz>
+References: <RT-Ticket-6392389@apnic.net>
+ <556c1f86bc27b7b4f10fb949e4751989@haoziwan.xyz>
+Message-ID: <rt-5.0.7-917894-1781157974-972.6392389-196-0@apnic.net>
+X-RT-Loop-Prevention: APNIC
+X-RT-Ticket: APNIC #6392389
+X-Managed-BY: RT 5.0.7 (http://www.bestpractical.com/rt/)
+To: abuse@haoziwan.xyz
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-RT-Original-Encoding: utf-8
+Precedence: bulk
+Date: Thu, 11 Jun 2026 16:06:14 +1000
+MIME-Version: 1.0
+
+
+Hi Zhong Miao,
+
+Thank you for bringing this matter to our attention and for the details
+provided regarding the suspected origin hijacking.
+We understand your concern regarding the announcement of APNIC-assigned
+address space by AS202734.
+
+APNIC (like AfriNIC, ARIN, LACNIC, and RIPE NCC) is a Regional
+Internet Registry (RIR) with a narrow mandate relating to technical
+and operational issues.
+
+The primary role of the RIRs is to register IP addresses and other
+resources to the organizations using them and to provide a public
+database where those registrations can be viewed. The RIRs have not
+been given any role to enforce standards of behaviour in relation to
+what is done with those resources. The RIRs simply have no legal
+authority to do that.
+
+Furthermore, the RIRs do not provide connectivity to users of
+Internet resources and therefore have no way to disconnect any users.
+
+To help mitigate the issue, we recommend you to contact the originating
+network (AS202734) via:
+
+  =E2=80=A2 WHOIS contact details
+  =E2=80=A2 Abuse or NOC email addresses
+
+Kind regards,
+Lu
+_______________________________________________________
+Internet Resource Analyst, APNIC
+e: helpdesk@apnic.net
+p: +61 7 3858 3188
+www.apnic.net
+_______________________________________________________
+=20
+
+On Thu Jun 11 04:44:02 2026, abuse@haoziwan.xyz wrote:
+
+> Dear APNIC Helpdesk,
+
+> I am an independent security researcher and am writing to report a confir=
+med BGP origin hijacking incident that occurred on May 16=E2=80=9317, 2026,=
+ directly affecting multiple APNIC members.
+
+> Incident Summary
+
+> AS202734 (registered to Tianshome.net / Junqi Tian, sponsored by RIPE NCC=
+ member MoeDove LLC) announced 4,632 IPv4 prefixes that it does not legally=
+ own. Among them are APNIC-assigned resources belonging to:
+
+> China Telecom (125.104.0.0/13, 240e::/20)
+
+> China Unicom
+
+> China Mobile
+
+> China Education and Research Network (CERNET)
+
+> Alibaba Cloud
+
+> Tencent Cloud
+
+> Huawei Cloud
+
+> China Postal Bureau
+
+> China Central Television (CCTV)
+
+> And hundreds of other Chinese organizations
+
+> This is not a route leak or a configuration error. This is origin hijacki=
+ng.
+
+> The HE Bogon List shows AS202734 announcing 125.104.0.0/13 with an AS-PAT=
+H length of 1 ([AS202734]). The AS falsely claimed direct ownership of Chin=
+a Telecom's prefix.
+
+> Key Evidence
+
+> HE Bogon List PDF (3,948 IPv4 prefixes): https://github.com/miao-2011/bgp=
+-hijack-evidence-AS202734/blob/main/0-attack-evidence/he_AS202734_bogons_li=
+st_20260517_part1.pdf
+
+> The operator manually injected China Telecom's IPv6 backbone (240e::/20) =
+on May 1, 2026 =E2=80=93 15 days before the incident (screenshot in the rep=
+o)
+
+> RIPE RIS raw logs: ripe_as202734_20260516.log and 20260517.log in the repo
+
+> Publicly accessible Netdata dashboard at 139.162.52.76:19999 exposed real=
+-time BGP metrics during the attack (exported and archived)
+
+> The sponsoring org (MoeDove LLC) responded to my abuse report with "To id=
+iot haoziwan.xyz" and refused to cooperate
+
+> What has been done
+
+> RIPE NCC notified (tickets #1042641, #1043090) =E2=80=93 they confirmed t=
+he assignment was "permissible" under current policy but did not take actio=
+n on the abuse
+
+> Upstreams notified =E2=80=93 Hurricane Electric has cut IPv6 peering; Vul=
+tr has cut IPv4 peering
+
+> NANOG community notified =E2=80=93 discussion archived at https://seclist=
+s.org/nanog/2026/May/132
+
+> Full evidence archive: https://github.com/miao-2011/bgp-hijack-evidence-A=
+S202734
+
+> What I am asking APNIC
+
+> Have you notified the affected APNIC members (China Telecom, Alibaba Clou=
+d, etc.) about this hijacking?
+
+> Does APNIC have any mechanism to work with RIPE NCC and ARIN to prevent c=
+ross-RIR origin hijacking?
+
+> What guidance can APNIC provide to its members to better protect their pr=
+efixes using RPKI/ROV, especially against origin hijacking?
+
+> I understand APNIC is not directly responsible for the actions of a RIPE-=
+assigned AS. However, the victims are your members. I believe APNIC should =
+be aware of this incident and its implications for routing security in the =
+APNIC region.
+
+> Full evidence is available in the GitHub repository. I am happy to provid=
+e any additional technical details if needed.
+
+> Thank you for your time.
+
+> Best regards,
+
+> Zhong Miao
+> Independent Security Researcher
+> postmaster@haoziwan.xyz
+> Evidence repository: https://github.com/miao-2011/bgp-hijack-evidence-AS2=
+02734
+
+
