@@ -90,6 +90,11 @@ The following data was captured **during the attack** on **May 16–17, 2026** f
 
 > **Note:** All numbers above are sourced directly from Hurricane Electric's BGP Toolkit. The complete data is available in the log file.
 
+**Further reading — IRR fraud analysis:**  
+[`/0-attack-evidence/key-observation-irr-fraud.md`](0-attack-evidence/key-observation-irr-fraud.md)
+
+**Key insight:** The attacker systematically created or modified IRR route objects for hijacked prefixes they did not own, including successful forgeries ("IRR Valid") and failed attempts ("IRR Parent Invalid"), demonstrating deliberate registry-layer fraud rather than accidental misconfiguration.
+
 ---
 
 ## Visual Evidence: Global Routing Chaos
