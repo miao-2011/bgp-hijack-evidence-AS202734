@@ -1,0 +1,89 @@
+Return-Path: <policy@apnic.net>
+X-Original-To: abuse@haoziwan.xyz
+Delivered-To: miao@haoziwan.xyz
+Received: from aliyun.haoziwan.xyz (unknown [43.108.43.216])
+	by haoziwan.xyz (Postfix) with ESMTPSA id 17BA64849E1
+	for <abuse@haoziwan.xyz>; Thu, 11 Jun 2026 23:07:33 +0000 (UTC)
+Received: from ao-mailgw.apnic.net (ao-mailgw.apnic.net [203.119.102.25])
+	by aliyun.haoziwan.xyz (Postfix) with ESMTP id 38F0012004C
+	for <abuse@haoziwan.xyz>; Fri, 12 Jun 2026 07:07:32 +0800 (CST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=apnic.net; s=mailgw2;
+	h=mime-version:date:content-transfer-encoding:content-type:to:message-id:
+	 references:in-reply-to:reply-to:from:subject:from;
+	bh=GFCVHRAqK7AW8A9BzbxFUGWIRnO2MrQKP+L7MmaEC3c=;
+	b=AKuZONdHbwEmjiUnjMw0Y/xrPjUwM3BU92ql9X7MTmgBLSWS3XK7qTq+PZF9m76WJwDES005lkz0h
+	 UMOh0NzPgoI97Zi6457pzK3a7Yh3fVOZpPlQyavp6nkH/EbqCPV4MomEtbONUpI6CxGfXZo0RBSfKJ
+	 w6iKRvnvWjLGWo6++iZWLz70J0Jc4vl6SfIMW9qDzwsmG6SvICO9fgj4lmzsyzuyj25YFnq5euL5R6
+	 ADhIJmT3Zd2PovLxuksiHshpFNF7aQl5dFGI4ZmvrYJ1szlvKx7UaFp4vyeFgldgw0cgb7QVMcL5I3
+	 QFrrfTlBxxaHkvGAu6l5jmpcBj6dYQw==
+Received: from rt-el9.apnic.int (unknown [10.2.200.24])
+	by ao-mailgw.apnic.net (Halon) with ESMTPS
+	id 51b887c3-65ea-11f1-9988-005056b6ee6f;
+	Fri, 12 Jun 2026 09:07:29 +1000 (AEST)
+Received: by rt-el9.apnic.int (Postfix, from userid 48)
+	id 480D91863C46; Fri, 12 Jun 2026 09:07:29 +1000 (AEST)
+Subject: =?UTF-8?B?W0FQTklDICM2MzkyMzkwXSBBUE5JQy1hc3NpZ25lZCBwcmVmaXhlcyBoaWph?= =?UTF-8?B?Y2tlZCBieSBBUzIwMjczNCAoUklQRS1hc3NpZ25lZCkg4oCTIE9yaWdpbiBo?= =?UTF-8?B?aWphY2tpbmcsIDQsNjMyIHByZWZpeGVz?=
+From: "Dave Phelan via RT" <policy@apnic.net>
+Reply-To: policy@apnic.net
+In-Reply-To: <556c1f86bc27b7b4f10fb949e4751989@haoziwan.xyz>
+References: <RT-Ticket-6392390@apnic.net>
+ <556c1f86bc27b7b4f10fb949e4751989@haoziwan.xyz>
+Message-ID: <rt-5.0.7-917895-1781219249-982.6392390-196-0@apnic.net>
+X-RT-Loop-Prevention: APNIC
+X-RT-Ticket: APNIC #6392390
+X-Managed-BY: RT 5.0.7 (http://www.bestpractical.com/rt/)
+To: abuse@haoziwan.xyz
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-RT-Original-Encoding: utf-8
+Precedence: bulk
+Date: Fri, 12 Jun 2026 09:07:29 +1000
+MIME-Version: 1.0
+
+Dear Zhong Miao,
+
+Thank you for your report.
+
+I have read the thread on the NANOGsec list, reviewed your github, and
+conducted some further investigation.
+I will start by highlighting the role of the RIRs in these cases.  
+As the RIR, we are only responsible for ensuring that policies are being
+applied in a fair and equitable way, that have been developed by the
+community.  If there is no policy breach, then there is little the RIRs can do
+in these instances.
+But I will respond to your specific requests
+
+Have you notified the affected APNIC members (China Telecom, Alibaba Cloud,
+etc.) about this hijacking?
+APNIC monitors hijack events via a member portal called DASH.  Members are
+able to set alerts when routing data from multiple sources indicates that
+there is a non conformance in their ROA states.  This is purely up to the
+member to create these alerts.
+
+
+Does APNIC have any mechanism to work with RIPE NCC and ARIN to prevent
+cross-RIR origin hijacking?
+The RIR's have good cross-communication with each other at a hostmaster and
+registry level.
+
+What guidance can APNIC provide to its members to better protect their
+prefixes using RPKI/ROV, especially against origin hijacking?
+APNIC frequently conducts ROA and RPKI training within the region. This
+training is made available to all members.
+
+I hope this answers your questions, and if you have anything further, I would
+suggest that you contact our helpdesk on helpdesk@apnic.net
+
+
+Regards
+
+
+Dave Phelan
+Policy Manager and Senior Network Analyst
+
+On Thu Jun 11 04:44:04 2026, abuse@haoziwan.xyz wrote:
+
+> Zhong Miao
+
+
