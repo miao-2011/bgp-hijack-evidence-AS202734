@@ -24,9 +24,23 @@ This repository is an archive of evidence regarding the BGP route leak/hijacking
 
 Route Views official collector (`route-views.routeviews.org`) captured the BGP routing table entry for `23.158.20.0/24` (a prefix legitimately owned by AS202734). The output reveals that **AS202734, AS402335, and AS402333 appear in fixed order** across multiple independent upstream paths.
 
-This fixed AS_PATH order indicates a deliberately configured routing policy, not random or transient path selection. The same infrastructure was used to announce both legitimate prefixes and the 4,632 hijacked prefixes documented above.
+This fixed AS_PATH order indicates a deliberately configured routing policy, not random or transient path selection.
 
-**Key implication:** The attacker operates a multi-AS, redundantly upstreamed BGP infrastructure with fixed routing policies — capabilities that are **incompatible with any claim of accidental misconfiguration**. The same AS_PATH engineering observed here was used to announce the 4,632 hijacked prefixes.
+**Additionally, the BGP UPDATE carries an `unknown transitive attribute` (flag 0xE0, type 0x20, length 0x60).** 
+
+| Flag | Meaning |
+|------|---------|
+| `0xE0` | Optional + Transitive + Complete |
+| `type 0x20` (32) | **Not a standard BGP attribute** — indicates custom/proprietary routing metadata |
+| `length 0x60` (96 bytes) | Carries non-trivial amount of information |
+
+Because the attribute is marked as **Transitive**, routers that do not recognize it must propagate it unchanged. This demonstrates that the route traversed a network capable of **advanced BGP engineering**, beyond basic route injection.
+
+**Key implications:**
+
+- The attacker operates a **multi-AS, redundantly upstreamed BGP infrastructure** with fixed routing policies — capabilities that are **incompatible with any claim of accidental misconfiguration**.
+- The presence of a **custom transitive attribute** indicates sophisticated BGP engineering, not a simple route leak.
+- The same AS_PATH engineering observed here was used to announce the **4,632 hijacked prefixes** documented above.
 
 **Raw output (full `show ip bgp` command result):**  
 [`/1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt`](1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt)
