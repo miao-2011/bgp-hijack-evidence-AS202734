@@ -169,6 +169,7 @@ All forks were created for archival purposes and serve as an immutable evidence 
 - **RIPE NCC AS202734 record**: [https://apps.db.ripe.net/db-web-ui/query?searchtext=AS202734](https://apps.db.ripe.net/db-web-ui/query?searchtext=AS202734)
 - **NANOG discussion**: [https://seclists.org/nanog/2026/May/132](https://seclists.org/nanog/2026/May/132)
 - **RIPE NCC tickets**: #1042641, #1043090
+- **APNIC**: #6392390, #6392389
 
 ---
 
