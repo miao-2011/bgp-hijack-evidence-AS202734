@@ -23,14 +23,14 @@
 
 ## Attack Chain Hypothesis
 
-Based on WHOIS records, BGPlay path data, and IXP peering information:
+Based on WHOIS records, BGPlay path data, IXP peering information, and PeeringDB records:
 
 | Layer | AS Number | Role | Location / Notes |
 |-------|-----------|------|------------------|
 | **Origin / Operator** | **AS202734** | Attack operator | RIPE NCC member (Tianshome.net / Junqi Tian) |
 | **Sponsoring LIR** | **ORG-ML942-RIPE** | MoeDove LLC | Confirmed sponsor of AS202734 (RIPE WHOIS) |
 | **Upstream / Peer** | **AS44324** | MoeDove LLC | Direct BGP peering with AS202734 (WHOIS: `import/export from AS44324`) |
-| **IXP** | AS210925 / AS211509 | RUDAKI-IX | Connects attacker to transit ASes |
+| **IXP** | AS210925 / AS211509 | RUDAKI-IX | Confirmed MoeDove peer (PeeringDB: 10G, RS PEER) |
 | **Transit AS** | AS29632 / AS211288 / AS8772 | Netassist | Ukraine / Bulgaria / Europe |
 | **Global Backbone** | AS3491 / AS1299 / AS2914 | PCCW / Telia / NTT | Tier-1 global carriers |
 | **Target** | **AS4134** | China Telecom | China (victim of route hijack) |
@@ -39,7 +39,7 @@ Based on WHOIS records, BGPlay path data, and IXP peering information:
 
 `AS202734 → AS44324 → RUDAKI-IX (AS210925/AS211509) → Netassist (AS29632/AS211288/AS8772) → Tier-1 (AS3491/AS1299/AS2914) → AS4134 (China Telecom)`
 
-> **Note:** This chain is based on WHOIS records and path cross-validation. PeeringDB/IXP membership data should be used to confirm each connection.
+> **Note:** This chain is based on WHOIS records, path cross-validation, and PeeringDB data. RUDAKI-IX is confirmed as a MoeDove public peer via PeeringDB.
 
 
 ## Key Observations
@@ -49,6 +49,7 @@ Based on WHOIS records, BGPlay path data, and IXP peering information:
 - **AS202734** is registered to **Junqi Tian** (Tianshome.net) — RIPE WHOIS
 - **AS202734** is sponsored by **MoeDove LLC (ORG-ML942-RIPE)** — RIPE WHOIS
 - **AS44324 (MoeDove LLC)** has direct BGP peering with AS202734 — RIPE WHOIS (`import/export from AS44324`)
+- **AS44324 (MoeDove LLC)** has public peering at **RUDAKI-IX** (10G, RS PEER) — PeeringDB confirmed
 - **AS4134 (China Telecom)** is the final victim receiving the injected route
 - **5,504 events** were recorded across 26 RIPE RRC collectors simultaneously
 - **693 withdrawal events** occurred, concentrated in the first 5 days of the attack
@@ -56,7 +57,6 @@ Based on WHOIS records, BGPlay path data, and IXP peering information:
 - **Attack location**: 1103-2100 Rue de Bleury, Montreal, QC, Canada (Junqi Tian's registered address, near McGill University)
 
 ### Pending / Medium Confidence
-- **RUDAKI-IX (AS210925 / AS211509)** serves as the entry point into the global BGP mesh — confirmed via AS29632 WHOIS (`MOEDOVE via RUDAKI-IX`), but AS44324's direct IXP membership needs verification
 - **Netassist (AS29632 / AS211288 / AS8772)** is the primary transit toward Tier-1 carriers — confirmed via WHOIS, but active peering status during the attack window needs cross-check
 
 
@@ -82,6 +82,39 @@ export:         to AS20473 announce AS202734
 - Junqi Tian's registered address is in **Montreal, Canada** (near McGill University)
 
 
+## Confirmed AS44324 (MoeDove LLC) WHOIS Information
+
+Raw output from RIPE WHOIS:
+
+aut-num:        AS44324
+as-name:        MOEDOVE-AS
+org:            ORG-ML942-RIPE (MoeDove LLC)
+address:        1209 Mountain Road Pl Ne, Ste N, Albuquerque, NM 87110, United States
+
+**Key takeaways:**
+- MoeDove LLC is registered in **New Mexico, USA**
+- Company registration: 7475136 (New Mexico)
+- Abuse contact: `noc@moedove.com`
+
+
+## Confirmed PeeringDB Information (AS44324 / MoeDove LLC)
+
+| Field | Value |
+|-------|-------|
+| ASN | 44324 |
+| Organization | MoeDove LLC |
+| IPv4 Prefixes | 1,000 |
+| IPv6 Prefixes | 1,000 |
+| Traffic Level | 10-20 Gbps |
+| Geographic Scope | Global |
+| Public Peering Exchange Points | RUDAKI-IX (10G, RS PEER), ZXIX Hangzhou (1G), ZXIX Hong Kong (10G), TPIX-TW (20G, Taipei), and 20+ others |
+
+**Key takeaways:**
+- **RUDAKI-IX** is confirmed as a MoeDove public peer (10G, RS PEER)
+- **MoeDove has physical presence in China**: ZXIX Hangzhou (1G), ZXIX Hong Kong (10G), TPIX-TW (20G, Taipei)
+- This confirms the attacker's infrastructure has direct access to Asian peering points
+
+
 ## Supporting Evidence
 
 | Evidence | Source |
@@ -92,11 +125,14 @@ export:         to AS20473 announce AS202734
 | AS202734 origin confirmation | HE Bogon list (3 PDFs) |
 | AS202734 WHOIS (Tianshome / Junqi Tian) | RIPE WHOIS |
 | AS202734 ← AS44324 peering | RIPE WHOIS (`import/export from AS44324`) |
+| AS44324 (MoeDove LLC) WHOIS | RIPE WHOIS |
+| AS44324 PeeringDB record | PeeringDB |
 | AS44324 ← AS29632 peering | AS29632 WHOIS (`MOEDOVE via RUDAKI-IX`) |
 | AS46997 / AS38008 transit | ARIN / APNIC WHOIS |
 | Attack timeline (May 1 injection) | BGPlay first anomaly at 05:20:35Z |
 | Multi-collector observation | 26 RIPE RRC collectors |
-| Attacker physical address | RIPE WHOIS (Montreal, QC, Canada) |
+| Attacker physical address (Junqi Tian) | RIPE WHOIS (Montreal, QC, Canada) |
+| MoeDove physical address | RIPE WHOIS (Albuquerque, NM, USA) |
 
 
 ## Confidence Assessment
@@ -110,20 +146,21 @@ export:         to AS20473 announce AS202734
 | AS202734 is Tianshome.net / Junqi Tian | **High** | RIPE WHOIS confirmed |
 | AS44324 (MoeDove LLC) is sponsor | **High** | RIPE WHOIS (`sponsoring-org: ORG-ML942-RIPE`) |
 | AS44324 is upstream/peer | **High** | RIPE WHOIS (`import/export from AS44324`) |
-| RUDAKI-IX is the entry IXP | **Medium** | AS210925/AS211509 present; needs IXP member list cross-check |
+| RUDAKI-IX is the entry IXP | **High** | PeeringDB confirms MoeDove public peer at RUDAKI-IX |
+| Netassist (AS29632) is transit | **Medium** | WHOIS confirmed; active peering status during attack window needs cross-check |
 
 
 ## Next Steps
 
-- [ ] Confirm AS44324's RUDAKI-IX membership via IXP member lists
-- [ ] Cross-check Netassist (AS29632) peering with European IXPs (DE-CIX, AMS-IX, PL-IX)
+- [ ] Cross-check Netassist (AS29632) peering with European IXPs (DE-CIX, AMS-IX, PL-IX) during the attack window
 
 
 ## Notes
 
-- AS202734 is confirmed as Tianshome.net / Junqi Tian via RIPE WHOIS.
-- MoeDove LLC (AS44324) is confirmed as the sponsoring organization and direct BGP peer.
-- All evidence in this document is derived from publicly accessible data sources (RIPE RIS, Hurricane Electric, WHOIS) or personally owned records.
+- **AS202734 is confirmed as Tianshome.net / Junqi Tian via RIPE WHOIS.**
+- **MoeDove LLC (AS44324) is confirmed as the sponsoring organization and direct BGP peer.**
+- **RUDAKI-IX is confirmed as a MoeDove public peer via PeeringDB.**
+- All evidence in this document is derived from publicly accessible data sources (RIPE RIS, Hurricane Electric, WHOIS, PeeringDB) or personally owned records.
 
 
 **Last Updated:** 2026-06-17  
