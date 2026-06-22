@@ -1,0 +1,65 @@
+Received: by 2002:a05:622a:22cb:20b0:517:7367:26fb with SMTP id y11-n2csp5615338qty;
+        Mon, 22 Jun 2026 08:48:28 -0700 (PDT)
+Received: from i-cc.cloudflare-email.net (i-cc.cloudflare-email.net. [104.30.8.22])
+        by mx.google.com with ESMTPS id a92af1059eb24-139addd3663si37996719c88.62.2026.06.22.08.48.28
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 22 Jun 2026 08:48:28 -0700 (PDT)
+Received: from ops.he.net (64.71.139.98)
+        by cloudflare-email.net (cloudflare) id Z5sSfAknt8lh
+        for <abuse@haoziwan.xyz>; Mon, 22 Jun 2026 15:48:23 +0000
+Received: from ops.he.net (localhost [127.0.0.1])
+	by ops.he.net
+	for <abuse@haoziwan.xyz>; Mon, 22 Jun 2026 08:48:20 -0700
+From: Kelly Cochran <support@he.net>
+To: abuse <abuse@haoziwan.xyz>
+Subject: [HE#7129512] Re: Data availability inquiry: historical BGP data
+ export
+Thread-Topic: [HE#7129512] Re: Data availability inquiry: historical BGP data
+ export
+Thread-Index: ATI5N2Vpinpx9IjY+eGEp0C4SZ1FGzdiYTYzMjkyMDQ=
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Mon, 22 Jun 2026 15:48:20 +0000
+Message-ID: <1782143300.2809842@ops.he.net>
+References: <HE-Ticket-7129512@he.net>
+ <606e4903de38f6dee1aa657d5be162c7@haoziwan.xyz>
+In-Reply-To: <606e4903de38f6dee1aa657d5be162c7@haoziwan.xyz>
+Reply-To: "support@he.net" <support@he.net>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of support@he.net designates
+ 64.71.139.98 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=64.71.139.98; envelope-from="support@he.net"; helo=ops.he.net;
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <C09C699B90D33448ABAF4639E4F36F37@1>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+TXVjaCBvZiBvdXIgZGF0YSBpcyBmcm9tIHByb2Nlc3NpbmcgZXh0ZXJuYWwgZGF0YSBzb3VyY2Vz
+LCBzdWNoIGFzIHJvdXRlLXZpZXdzIGFuZCBSSVBFIFJJUy4gIE1SVCBpbmZvcm1hdGlvbiBmcm9t
+IHRoYXQgdGltZS1mcmFtZSBpcyB1c3VhbGx5IGF2YWlsYWJsZSBmcm9tIHRob3NlIHNvdXJjZXMs
+IGJ1dCB3ZSBkb24ndCBhcmNoaXZlIHRoZSB0cmFuc2llbnQgZGF0YSBkZXJpdmVkIGZyb20gc3Vj
+aCBleHRlcm5hbCBkYXRhIHNvdXJjZXMuDQoNCi0tIC1IIFUgUiBSIEkgQyBBIE4gRSAtIEUgTCBF
+IEMgVCBSIEkgQy0NCktlbGx5IENvY2hyYW4gICBTci4gTmV0d29yayBFbmdpbmVlcg0KKzEtNTEw
+LTU4MC00MTAwIGh0dHA6Ly93d3cuaGUubmV0LyAgIEFTNjkzOQ0KDQotLS0tIE9yaWdpbmFsIG1l
+c3NhZ2UgLS0tLQ0KDQo+IEhlbGxvIEh1cnJpY2FuZSBFbGVjdHJpYyBUZWFtLA0KPiANCj4gSSBh
+bSBhbiBpbmRlcGVuZGVudCBzZWN1cml0eSByZXNlYXJjaGVyIGRvY3VtZW50aW5nIGEgQkdQIHJv
+dXRpbmcgDQo+IGluY2lkZW50IGludm9sdmluZyBBUzIwMjczNCB0aGF0IG9jY3VycmVkIGluIE1h
+eSAyMDI2LiBZb3VyIEJHUCBUb29sa2l0IA0KPiBoYXMgYmVlbiBhbiBpbnZhbHVhYmxlIHJlc291
+cmNlIGluIG15IGludmVzdGlnYXRpb24uDQo+IA0KPiBJIHdvdWxkIGxpa2UgdG8gcmVxdWVzdCBo
+aXN0b3JpY2FsIGRhdGEgZm9yIEFTMjAyNzM0IGNvdmVyaW5nIHRoZSBwZXJpb2QgDQo+IGZyb20g
+KipNYXkgMTAsIDIwMjYgdG8gTWF5IDI1LCAyMDI2KiosIHNwZWNpZmljYWxseToNCj4gDQo+IC0g
+SVB2NCBhbmQgSVB2NiBwcmVmaXggYW5ub3VuY2VtZW50cyB3aXRoIHRpbWVzdGFtcHMNCj4gLSBB
+U19QQVRIIGluZm9ybWF0aW9uIGZvciBlYWNoIGFubm91bmNlbWVudA0KPiAtIFdpdGhkcmF3YWwg
+ZXZlbnRzLCBpZiBhdmFpbGFibGUNCj4gDQo+IENvdWxkIHlvdSBjb25maXJtIHdoZXRoZXIgc3Vj
+aCBkYXRhIGNhbiBiZSBleHBvcnRlZCwgYW5kIGlmIHNvLCB3aGF0IA0KPiBmb3JtYXRzIGFyZSBh
+dmFpbGFibGUgKEpTT04sIENTViwgcGxhaW4gdGV4dCk/DQo+IA0KPiBJZiB0aGlzIGRhdGEgaXMg
+bm90IGF2YWlsYWJsZSwgSSB1bmRlcnN0YW5kLiBBIGJyaWVmIGNvbmZpcm1hdGlvbiBlaXRoZXIg
+DQo+IHdheSB3b3VsZCBiZSB2ZXJ5IGhlbHBmdWwuDQo+IA0KPiBUaGFuayB5b3UgZm9yIG1haW50
+YWluaW5nIHN1Y2ggYSB2YWx1YWJsZSBwdWJsaWMgcmVzb3VyY2UuDQo+IA0KPiBCZXN0IHJlZ2Fy
+ZHMsDQo+IFpob25nIE1pYW8NCj4gSW5kZXBlbmRlbnQgU2VjdXJpdHkgUmVzZWFyY2hlcg0KPiBh
+YnVzZUBoYW96aXdhbi54eXoNCj4gR2l0SHViOiBodHRwczovL2dpdGh1Yi5jb20vbWlhby0yMDEx
+L2JncC1oaWphY2stZXZpZGVuY2UtQVMyMDI3MzQNCj4gDQo+IA0KPg0KDQo=
