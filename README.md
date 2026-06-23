@@ -162,6 +162,29 @@ In addition to the screenshots and data in [`/1-attacker-assets`](1-attacker-ass
 All forks were created for archival purposes and serve as an immutable evidence record.
 
 ---
+## Correspondence
+
+### Hurricane Electric (HE)
+
+| Date | Event | Status |
+|------|-------|--------|
+| 2026-06-22 | Initial data request sent to HE | Sent |
+| 2026-06-22 | HE auto-acknowledgement, ticket [HE#7129512] | Received |
+| 2026-06-22 | HE substantive response (Kelly Cochran) | Received |
+| 2026-06-23 | Follow-up request sent, clarifying direct peer status | Sent |
+| 2026-06-23 | HE final response (Cole Bite, NOC) | Received |
+
+**HE's Final Response (Summary)**:
+1. HE states they **do not log past peer route announcements**.
+2. HE states they **may have logged data regarding BGP session status with AS6939**, but **will not share without a court order**.
+
+**Investigator's Note**:
+HE's final response is internally inconsistent. If HE does not log past peer route announcements, the assertion that they "may have logged data" is contradictory. This suggests HE does retain some BGP-related data, but has chosen not to cooperate without legal compulsion. HE's refusal is hereby documented as a non-cooperation data point.
+
+**Archive Reference**:
+[`[HE#7129512] HE_Official_Response_No_Historical_Logs.eml`](2-communication/%5BHE%237129512%5D%20HE_Official_Response_No_Historical_Logs.eml)
+
+---
 
 ## Related Links
 
@@ -170,6 +193,7 @@ All forks were created for archival purposes and serve as an immutable evidence 
 - **NANOG discussion**: [https://seclists.org/nanog/2026/May/132](https://seclists.org/nanog/2026/May/132)
 - **RIPE NCC tickets**: #1042641, #1043090
 - **APNIC**: #6392390, #6392389
+- **Hurricane Electric**: #7129512
 
 ---
 
