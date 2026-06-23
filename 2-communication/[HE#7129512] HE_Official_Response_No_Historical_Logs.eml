@@ -1,0 +1,71 @@
+Received: by 2002:a05:622a:22cb:20b0:517:7367:26fb with SMTP id y11-n2csp5739671qty;
+        Mon, 22 Jun 2026 12:04:36 -0700 (PDT)
+Received: from i-cc.cloudflare-email.net (i-cc.cloudflare-email.net. [104.30.8.22])
+        by mx.google.com with ESMTPS id a92af1059eb24-139addcd66esi26988241c88.53.2026.06.22.12.04.35
+        for <ajhk9857@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Mon, 22 Jun 2026 12:04:36 -0700 (PDT)
+Received: from tickets.he.net (2001:470:0:c5::4047:8b63)
+        by cloudflare-email.net (cloudflare) id pnuNtPYqnSq4
+        for <abuse@haoziwan.xyz>; Mon, 22 Jun 2026 19:04:34 +0000
+Received: from ops.he.net (localhost [127.0.0.1])
+	by tickets.he.net
+	for <abuse@haoziwan.xyz>; Mon, 22 Jun 2026 12:04:27 -0700
+From: Cole Bite <noc@he.net>
+To: abuse <abuse@haoziwan.xyz>
+Subject: [HE#7129512] Re: Data availability inquiry: historical BGP data
+ export
+Thread-Topic: [HE#7129512] Re: Data availability inquiry: historical BGP data
+ export
+Thread-Index: ATI5N2Vpinpx9IjY+eGEp0C4SZ1FGzA2ZWI0NzczNjU=
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Mon, 22 Jun 2026 19:04:27 +0000
+Message-ID: <1782155067.3007217@ops.he.net>
+References: <HE-Ticket-7129512@he.net>
+ <3dbfdf74289f5b4be51eb5c6765657c0@haoziwan.xyz>
+In-Reply-To: <3dbfdf74289f5b4be51eb5c6765657c0@haoziwan.xyz>
+Reply-To: "noc@he.net" <noc@he.net>
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+received-spf: pass (mx.cloudflare.net: domain of noc@he.net designates
+ 2001:470:0:c5::4047:8b63 as permitted sender)	receiver=mx.cloudflare.net;
+ client-ip=2001:470:0:c5::4047:8b63; envelope-from="noc@he.net";
+ helo=tickets.he.net;
+Content-Type: text/plain; charset="utf-8"
+Content-ID: <79C503EFD4380C4DADF18FF9F39C5036@1>
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+SGVsbG8sDQoNCldlIGRvIG5vdCBsb2cgcGFzdCBwZWVyIHJvdXRlIGFubm91bmNlbWVudHMuIFdl
+IG1heSBoYXZlIHNvbWUgbG9nZ2VkIGRhdGEgcmVnYXJkaW5nIEJHUCBzZXNzaW9uIHN0YXR1cyB3
+aXRoIG91ciBvd24gQVM2OTM5IGJ1dCB0aGF0IHdvdWxkIG5vdCBiZSBzb21ldGhpbmcgd2UgY291
+bGQgc2hhcmUgd2l0aG91dCBhIGNvdXJ0IG9yZGVyLg0KDQoNCkNvbGUgQml0ZQ0KSHVycmljYW5l
+IEVsZWN0cmljDQpBUzY5MzkgLSA1MTAuNTgwLjQxMDANCg0KLS0tLSBPcmlnaW5hbCBtZXNzYWdl
+IC0tLS0NCg0KPiBEZWFyIEtlbGx5IC8gSHVycmljYW5lIEVsZWN0cmljIFN1cHBvcnQsDQo+IA0K
+PiBUaGFuayB5b3UgZm9yIHlvdXIgcHJvbXB0IHJlc3BvbnNlLg0KPiANCj4gSSB3b3VsZCBsaWtl
+IHRvIGNsYXJpZnkgYSBmYWN0dWFsIG1hdHRlciByZWdhcmRpbmcgeW91ciBkYXRhIHNvdXJjZXMu
+DQo+IA0KPiBBY2NvcmRpbmcgdG8gSEUncyBvd24gQkdQIFRvb2xraXQgc25hcHNob3QgKGF0dGFj
+aGVkKSwgQVM2OTM5IChIdXJyaWNhbmUgDQo+IEVsZWN0cmljKSBpcyBsaXN0ZWQgYXMgYW4gSVB2
+NiBCR1AgcGVlciBvZiBBUzIwMjczNDoNCj4gDQo+IEFTMjAyNzM0IElQdjYgUGVlcnM6DQo+IC0g
+QVM0NDMyNCAoTW9lRG92ZSBMTEMpDQo+IC0gQVMyMDQ3MyAoVGhlIENvbnN0YW50IENvbXBhbnks
+IExMQykNCj4gLSBBUzY5MzkgKEh1cnJpY2FuZSBFbGVjdHJpYyBMTEMpICDihpAgSEUncyBvd24g
+QVNODQo+IA0KPiBUaGlzIG1lYW5zIHRoYXQgQVMyMDI3MzQncyByb3V0ZSBhbm5vdW5jZW1lbnRz
+IHdlcmUgcmVjZWl2ZWQgZGlyZWN0bHkgb24gDQo+IEhFJ3Mgb3duIHJvdXRlcnMg4oCUIG5vdCBp
+bmRpcmVjdGx5IHRocm91Z2ggUm91dGUgVmlld3Mgb3IgUklQRSBSSVMuDQo+IA0KPiBNeSBxdWVz
+dGlvbiBpcyB0aGVyZWZvcmU6DQo+IA0KPiAxLiBEb2VzIEhFIHJldGFpbiBCR1Agc2Vzc2lvbiBs
+b2dzIGZyb20gaXRzIGRpcmVjdCBwZWVycz8NCj4gMi4gSWYgc28sIGZvciB0aGUgcGVyaW9kIG9m
+IE1heSAxMC0yNSwgMjAyNiwgY2FuIHRoZXNlIGxvZ3MgYmUgcHJvdmlkZWQ/DQo+IDMuIElmIEhF
+IGRvZXMgbm90IHJldGFpbiBzdWNoIGxvZ3MgZm9yIGRpcmVjdCBwZWVycywgcGxlYXNlIGNvbmZp
+cm0gdGhpcyANCj4gaW4gd3JpdGluZy4NCj4gDQo+IFRvIGJlIGNsZWFyOiBJIGFtIG5vdCBhc2tp
+bmcgSEUgdG8gcmV0cmlldmUgZGF0YSBmcm9tIFJvdXRlIFZpZXdzIG9yIA0KPiBSSVBFIFJJUyBv
+biBteSBiZWhhbGYuIEkgYW0gYXNraW5nIHdoZXRoZXIgSEUncyBvd24gaW5mcmFzdHJ1Y3R1cmUg
+4oCUIA0KPiB3aGljaCBkaXJlY3RseSBwZWVyZWQgd2l0aCBBUzIwMjczNCDigJQgbG9nZ2VkIHRo
+ZSBCR1AgYW5ub3VuY2VtZW50cyANCj4gcmVjZWl2ZWQgZnJvbSB0aGF0IHBlZXIgZHVyaW5nIHRo
+ZSBpbmNpZGVudCBwZXJpb2QuDQo+IA0KPiBUaGUgc25hcHNob3Qgc2hvd2luZyBIRSBhcyBhIGRp
+cmVjdCBwZWVyIGlzIGF0dGFjaGVkIGZvciB5b3VyIHJlZmVyZW5jZS4NCj4gDQo+IEkgYXdhaXQg
+eW91ciBjbGFyaWZpY2F0aW9uLg0KPiANCj4gQmVzdCByZWdhcmRzLA0KPiBaaG9uZyBNaWFvDQo+
+IEluZGVwZW5kZW50IFNlY3VyaXR5IFJlc2VhcmNoZXINCj4gYWJ1c2VAaGFveml3YW4ueHl6DQo+
+IA0KPiANCj4NCg0K
