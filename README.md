@@ -111,8 +111,10 @@ The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `2
 
 > **Note:** This is a direct link to RIPE NCC's own visualization tool, using their own data. It independently confirms the abnormal routing behavior correlated with the attacker's actions.
 
-**Raw Data:**  
-The complete BGPlay JSON export (5,504 timestamped events) is available in the repository at [`/0-attack-evidence/bgplay-240e-may2026.json`](0-attack-evidence/bgplay-240e-may2026.json).
+***Raw Data:**  
+The complete BGPlay JSON export (5,504 timestamped events) is available in two formats:
+- **Human-readable:** [`/0-attack-evidence/240e_events.json`](0-attack-evidence/240e_events.json)
+- **Raw (for jq processing):** [`/0-attack-evidence/bgplay-240e-may2026.json`](0-attack-evidence/bgplay-240e-may2026.json)
 
 ---
 
@@ -162,6 +164,7 @@ In addition to the screenshots and data in [`/1-attacker-assets`](1-attacker-ass
 All forks were created for archival purposes and serve as an immutable evidence record.
 
 ---
+
 ## Correspondence
 
 ### Hurricane Electric (HE)
