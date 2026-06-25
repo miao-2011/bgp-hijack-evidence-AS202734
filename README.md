@@ -134,7 +134,7 @@ Rinne Miyano (`pigeon@moedove.com`) responded to a formal notice with:
 
 This response did not address any technical evidence.
 
-**Archive:** [`/2-communication/Re_ Notice of Archival_ AS202734 BGP Route Announcements.eml`](2-communication/Re_ Notice of Archival_ AS202734 BGP Route Announcements.eml)
+**Archive:** [`/2-communication/Re_ Notice of Archival_ AS202734 BGP Route Announcements.eml`](2-communication/Re_%20Notice%20of%20Archival_%20AS202734%20BGP%20Route%20Announcements.eml)
 
 ### 3. Tianshome.net — Jacob-Junqi Tian (June 25, 2026)
 
