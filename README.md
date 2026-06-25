@@ -1,22 +1,22 @@
 # BGP Hijacking Evidence: AS202734
 
-This repository is an archive of evidence regarding the BGP route leak/hijacking incident on **May 16–17, 2026**, involving AS202734 (registered to Junqi Tian / Tianshome.net), sponsored by MoeDove LLC.
+This repository is an independent archive of evidence regarding the BGP route hijacking incident on **May 16–17, 2026**, involving AS202734 (registered to Junqi Tian / Tianshome.net), sponsored by MoeDove LLC.
 
 ---
 
 ## TL;DR
 
-**One RIPE NCC member (AS202734) + two affiliated ASes (AS402335, AS402333) intentionally hijacked 4,632 prefixes including China Telecom's IPv6 backbone. The sponsoring LIR responded to abuse with "To idiot". All evidence independently archived.**
+**AS202734, together with affiliated ASes AS402335 and AS402333, originated 4,632 unauthorized IPv4 and IPv6 prefixes, including China Telecom's IPv6 backbone (`240e::/20`). The attack involved systematic IRR object forgery, RPKI-invalid announcements, and custom BGP attributes. The sponsoring LIR responded to abuse reports with "To idiot haoziwan.xyz". All evidence is independently archived here.**
 
 ---
 
 ## Key Facts
 
 - **4,632 prefixes** were exported to Hurricane Electric's route collector
-- **Affected prefixes include:** China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and more
+- **Affected prefixes include:** China Telecom, China Unicom, China Mobile, China Postal Bureau, Alibaba Cloud, Tencent Cloud, Huawei Cloud, CERNET, and others
 - The operator **manually injected China Telecom IPv6 backbone (`240e::/20`)** on **May 1, 2026** (15 days before the leak)
 - **Geofeed** shows a router in Shanghai, China (`yngp2-211`, Yangpu District)
-- Sponsoring organization **MoeDove LLC** responded to abuse report with: **"To idiot haoziwan.xyz"**
+- Sponsoring organization **MoeDove LLC** responded to an abuse report with: **"To idiot haoziwan.xyz"**
 
 ---
 
@@ -26,7 +26,7 @@ Route Views official collector (`route-views.routeviews.org`) captured the BGP r
 
 This fixed AS_PATH order indicates a deliberately configured routing policy, not random or transient path selection.
 
-**Additionally, the BGP UPDATE carries an `unknown transitive attribute` (flag 0xE0, type 0x20, length 0x60).** 
+**Additionally, the BGP UPDATE carries an `unknown transitive attribute` (flag 0xE0, type 0x20, length 0x60).**
 
 | Flag | Meaning |
 |------|---------|
@@ -34,13 +34,13 @@ This fixed AS_PATH order indicates a deliberately configured routing policy, not
 | `type 0x20` (32) | **Not a standard BGP attribute** — indicates custom/proprietary routing metadata |
 | `length 0x60` (96 bytes) | Carries non-trivial amount of information |
 
-Because the attribute is marked as **Transitive**, routers that do not recognize it must propagate it unchanged. This demonstrates that the route traversed a network capable of **advanced BGP engineering**, beyond basic route injection.
+Because the attribute is marked as **Transitive**, routers that do not recognize it must propagate it unchanged. This indicates the route traversed a network capable of **advanced BGP engineering**, beyond basic route injection.
 
 **Key implications:**
 
-- The attacker operates a **multi-AS, redundantly upstreamed BGP infrastructure** with fixed routing policies — capabilities that are **incompatible with any claim of accidental misconfiguration**.
-- The presence of a **custom transitive attribute** indicates sophisticated BGP engineering, not a simple route leak.
-- The same AS_PATH engineering observed here was used to announce the **4,632 hijacked prefixes** documented above.
+- The operator maintains a **multi-AS, redundantly upstreamed BGP infrastructure** with fixed routing policies — capabilities that are **incompatible with any claim of accidental misconfiguration**
+- The presence of a **custom transitive attribute** indicates sophisticated BGP engineering, not a simple route leak
+- The same AS_PATH engineering observed here was used to announce the **4,632 hijacked prefixes** documented above
 
 **Raw output (full `show ip bgp` command result):**  
 [`/1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt`](1-attacker-assets/route-views_show_ip_bgp_23.158.20.0-24.txt)
@@ -118,13 +118,37 @@ The complete BGPlay JSON export (5,504 timestamped events) is available in two f
 
 ---
 
+## Communication Record
+
+### 1. NANOG Public Response — Jacob-Junqi Tian (May 23, 2026)
+
+Tian publicly responded on the NANOG mailing list, attributing the incident to a "filter configuration error" in a custom BIRD3 setup. He claimed that the affected prefixes were exported only to Hurricane Electric's route collector, not to public upstream routers. He did not address IRR forgery, RPKI-invalid prefixes, or the custom transitive BGP attribute observed in the hijacked routes.
+
+**Archive:** [`/2-communication/Re_%20%5BBGP%20Hijack%5D%20AS202734%20hijacked%20multiple%20Chinese%20Carriers%20on%20May%2016-17%20%E2%80%93%20Full%20evidence%20and%20attribution.eml`](2-communication/Re_%20%5BBGP%20Hijack%5D%20AS202734%20hijacked%20multiple%20Chinese%20Carriers%20on%20May%2016-17%20%E2%80%93%20Full%20evidence%20and%20attribution.eml)
+
+### 2. MoeDove LLC — Rinne Miyano (June 25, 2026)
+
+Rinne Miyano (`pigeon@moedove.com`) responded to a formal notice with:
+
+> *"Stop wasting our time, this is just another spam. Your repo and so-called research are worth nothing, literally a piece of shit. Get back to doing your homework, kid."*
+
+This response did not address any technical evidence.
+
+**Archive:** [`/2-communication/Re_ Notice of Archival_ AS202734 BGP Route Announcements.eml`](2-communication/Re_ Notice of Archival_ AS202734 BGP Route Announcements.eml)
+
+### 3. Tianshome.net — Jacob-Junqi Tian (June 25, 2026)
+
+Tian sent a formal cease-and-desist letter, disputing the term "originate," denying unauthorized announcements, and threatening legal action across three jurisdictions (Canada, United States, China). He did not provide counter-evidence for the IRR forgery or RPKI-invalid claims.
+
+**Archive:** [`/2-communication/2026-06-25_Jacob-Junqi-Tian_cease-and-desist.eml`](2-communication/2026-06-25_Jacob-Junqi-Tian_cease-and-desist.eml)
+
+**CC list included:** `noc@tianshome.com`, `chariri@chariri.moe`, `yangyingling02@gmail.com`, `iuusreport@gmail.com`, `pigeon@moedove.com`
+
+---
+
 ## Source & Independence Statement
 
 All evidence in this repository was **independently collected, verified, and archived** by Zhong Miao (`postmaster@haoziwan.xyz`).
-
-The attacker's original GitHub repositories remain publicly available at the time of this writing and have been **forked and preserved** as independent repositories under the same GitHub account (see below).
-
-**This repository is not a direct fork of any attacker repository. It is an original evidence archive created by the investigator.**
 
 |                 |                      |
 |-----------------|----------------------|
@@ -144,24 +168,6 @@ The attacker's original GitHub repositories remain publicly available at the tim
 | [`/4-moedove-identity`](4-moedove-identity) | MoeDove LLC — upstream/sponsor identity and assets (ToS, website, GitHub PRs) |
 | [`/5-additional-context`](5-additional-context) | WHOIS records, company background, NANOG discussion summary |
 | [`/6-retaliation-evidence`](6-retaliation-evidence) | Retaliatory harassment — confirmed email spoofing (MoeDove LLC) + suspected mail subscription bombing (source unconfirmed, timeline documented) |
-
----
-
-## Attacker's Original Repositories (Forked & Preserved)
-
-In addition to the screenshots and data in [`/1-attacker-assets`](1-attacker-assets), the attacker's original GitHub repositories have been forked and preserved as independent repositories:
-
-| Original (attacker) | Forked backup (preserved) |
-| :--- | :--- |
-| `tianshome/moegeo` | [`miao-2011/moegeo`](https://github.com/miao-2011/moegeo) |
-| `tianshome/geofeed` | [`miao-2011/geofeed`](https://github.com/miao-2011/geofeed) |
-| `tianshome/bird-configs-output` | [`miao-2011/bird-configs-output`](https://github.com/miao-2011/bird-configs-output) |
-| `tianshome/looking-glass` | [`miao-2011/looking-glass`](https://github.com/miao-2011/looking-glass) |
-| `tianshome/zt-ix` | [`miao-2011/zt-ix`](https://github.com/miao-2011/zt-ix) |
-| `tianshome/bird` | [`miao-2011/bird`](https://github.com/miao-2011/bird) |
-| `tianshome/chn-resolver` | [`miao-2011/chn-resolver`](https://github.com/miao-2011/chn-resolver) |
-
-All forks were created for archival purposes and serve as an immutable evidence record.
 
 ---
 
