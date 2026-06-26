@@ -51,9 +51,40 @@ Because the attribute is marked as **Transitive**, routers that do not recognize
 
 ## Retaliatory Actions
 
-### Confirmed: Email Spoofing Attempt
+### Confirmed: Email Spoofing Attempts (May 19 & June 25, 2026)
 
-Following the abuse report and publication of this repository, MoeDove LLC (`moedove.com`) attempted to forge `haoziwan.xyz` as the From domain, sending 12 spoofed emails via Google infrastructure (IP `209.85.220.69`). All attempts were rejected by DMARC policy (`p=reject`).
+Two independent DMARC reports from Cloudflare confirm that MoeDove LLC and Tianshome.net repeatedly attempted to impersonate `haoziwan.xyz`:
+
+| Date | Sending IP | Display Domain | Actual Sending Domain | SPF Alignment | DKIM Alignment | DMARC Result | Count |
+|------|-----------|----------------|----------------------|---------------|----------------|--------------|-------|
+| 2026-05-19 | 209.85.220.69 (Google LLC) | haoziwan.xyz | moedove.com | Fail | Fail | Rejected (p=reject) | 12 |
+| 2026-06-25 | 57.103.76.251 (Apple Inc.) | haoziwan.xyz | tianshome.net | Fail | Pass | Passed (DKIM-aligned) | 1 |
+
+**Raw Evidence**: Cloudflare DMARC reports (archived in `/6-retaliation-evidence/`):
+
+- `cloudflare-dmarc-moedove-spoofing-haoziwan-2026-05-19.pdf` — 12 rejected attempts via Google infrastructure
+- `2026-06-25_tianshome-net_spoofing-haoziwan-xyz_dmarc-report.pdf` — 1 delivered attempt (SPF fail, DKIM pass) via Apple Inc. infrastructure
+
+**Technical Analysis:**
+
+| Observation | Implication |
+|-------------|-------------|
+| Two independent spoofing events, 37 days apart | Pattern of behavior, not isolated incident |
+| Different sending infrastructures (Google + Apple) | Multiple deliberate attempts using different vectors |
+| Both used haoziwan.xyz as display domain | Clear intent to impersonate the victim |
+| May 19 attempt: all 12 rejected by DMARC p=reject | Existing DMARC policy successfully blocked impersonation |
+| June 25 attempt: added valid DKIM signature from tianshome.net | Sender adapted tactics after first failure, demonstrating deliberate engineering |
+| Both sending domains (moedove.com, tianshome.net) are directly affiliated with AS202734 | Direct link between spoofing and the party accused of BGP hijacking |
+
+**Conclusion:**
+
+The documented spoofing attempts demonstrate intentional impersonation of haoziwan.xyz, eliminating any possibility of:
+
+- Accidental misconfiguration: the June 25 attempt specifically added DKIM signing to evade detection, showing deliberate technical adaptation
+- Wrong domain entered: both attempts used haoziwan.xyz as display domain while the email content specifically referenced this investigation
+- Third-party action: both sending infrastructures are controlled by the same parties identified in the BGP hijacking incident (MoeDove LLC / Tianshome.net)
+
+This constitutes a documented pattern of retaliatory harassment via email spoofing, following the publication of evidence regarding AS202734's BGP hijacking activities.
 
 **Full documentation:** [`/6-retaliation-evidence/SPOOFING_ATTEMPT.md`](6-retaliation-evidence/SPOOFING_ATTEMPT.md)
 
@@ -106,12 +137,12 @@ The following BGPlay animation (RIPE NCC) visualizes the BGP path changes for `2
 - First major route flaps started **within minutes** after the May 1 manual injection
 - Continuous path instability during the **May 16–17 hijack window**, observed across multiple global collectors (RRC00, RRC19, RRC23, RRC24, RRC25, etc.)
 
-🔗 **Interactive BGPlay Timeline:**  
+**Interactive BGPlay Timeline:**  
 [https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26](https://stat.ripe.net/bgplay/240e::/20#starttime=1777593600&endtime=1779321599&rrcs=0,1,3,4,5,6,7,10,11,12,13,15,16,18,19,20,21,22,23,24,25,26)
 
 > **Note:** This is a direct link to RIPE NCC's own visualization tool, using their own data. It independently confirms the abnormal routing behavior correlated with the attacker's actions.
 
-***Raw Data:**  
+**Raw Data:**  
 The complete BGPlay JSON export (5,504 timestamped events) is available in two formats:
 - **Human-readable:** [`/0-attack-evidence/240e_events.json`](0-attack-evidence/240e_events.json)
 - **Raw (for jq processing):** [`/0-attack-evidence/bgplay-240e-may2026.json`](0-attack-evidence/bgplay-240e-may2026.json)
