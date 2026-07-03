@@ -20,6 +20,44 @@ This repository is an independent archive of evidence regarding the BGP route hi
 
 ---
 
+## Attackers' Own Looking Glass: Self-Incriminating Evidence
+
+The operator of AS202734 maintained a public-facing Looking Glass server, which was used to monitor the BGP state of target prefixes. The query history, captured and archived in `/looking glass/`, reveals:
+
+### Key Findings
+
+| Finding | Implication |
+|---------|-------------|
+| Global POP network (NYC, FRA, SIN, TYO, SEA) | Professional BGP infrastructure, not accidental |
+| Route Reflector cluster (`bgp_cluster_list: 0.3.0.1`) | Enterprise-grade routing architecture |
+| Queries for `1.0.0.1` (Cloudflare), `103.36.96.0` (Microsoft), `240e::/20` (China Telecom) | Systematic monitoring of hijack targets |
+| Query for `175.45.176.0/24` (Ryugyong-dong, Pyongyang) | Unauthorized surveillance of North Korean infrastructure |
+
+### Archived Queries
+
+The following PDFs were captured from the attacker's own Looking Glass server:
+
+- `175.45.176.1 lookingglass(Ryugyong-dong).pdf` — Query for North Korean IP space
+- `240e lookingglass(China Telecom).pdf` — Query for China Telecom IPv6 backbone
+- `103.36.96.0 lookingglass(Microsoft).pdf` — Query for Microsoft Azure prefix
+- `59.80.0.0 lookingglass(China Unicom).pdf` — Query for China Unicom prefix
+- ... (full list in `/looking glass/`)
+
+### Why This Matters
+
+**This is not third-party observation. This is the attacker's own infrastructure recording their own activities.**
+
+The Looking Glass was operated by AS202734 and used to:
+1. Verify hijack status of target prefixes
+2. Monitor route propagation across global POPs
+3. Coordinate attacks across multiple ASes (AS202734, AS402333, AS402335)
+
+**No "misconfiguration" theory can explain why a network would query thousands of prefixes it does not own, across multiple continents, using an enterprise-grade BGP routing architecture.**
+
+**Full evidence: `/looking glass/`**
+
+---
+
 ## Multi-AS Attack Infrastructure
 
 Route Views official collector (`route-views.routeviews.org`) captured the BGP routing table entry for `23.158.20.0/24` (a prefix legitimately owned by AS202734). The output reveals that **AS202734, AS402335, and AS402333 appear in fixed order** across multiple independent upstream paths.
