@@ -41,7 +41,7 @@ The following PDFs were captured from the attacker's own Looking Glass server:
 - `240e lookingglass(China Telecom).pdf` — Query for China Telecom IPv6 backbone
 - `103.36.96.0 lookingglass(Microsoft).pdf` — Query for Microsoft Azure prefix
 - `59.80.0.0 lookingglass(China Unicom).pdf` — Query for China Unicom prefix
-- ... (full list in `/looking glass/`)
+- ... (full list in [`/looking glass/`](/looking%20glass/))
 
 ### Why This Matters
 
@@ -54,7 +54,7 @@ The Looking Glass was operated by AS202734 and used to:
 
 **No "misconfiguration" theory can explain why a network would query thousands of prefixes it does not own, across multiple continents, using an enterprise-grade BGP routing architecture.**
 
-**Full evidence: `/looking glass/`**
+**Full evidence: [`/looking glass/`](/looking%20glass/)**
 
 ---
 
