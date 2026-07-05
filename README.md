@@ -66,6 +66,8 @@ On or around **July 4–5, 2026**, the operator of AS202734 added an access cont
 - Justification / intended use case
 
 **Context:**
+- **Archived access request form (July 5, 2026):**  
+[`/looking glass/lg.tianshome.net_access_request.pdf`](/looking%20glass/lg.tianshome.net_access_request.pdf)
 - The Looking Glass had been **fully public and accessible without restriction** during the entire investigation period (May–July 3, 2026)
 - **Internet Archive snapshot confirms the public state on July 3, 2026:**  
   [`https://web.archive.org/web/20260703131435/http://lg.tianshome.net/`](https://web.archive.org/web/20260703131435/http://lg.tianshome.net/)
