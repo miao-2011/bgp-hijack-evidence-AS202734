@@ -56,6 +56,29 @@ The Looking Glass was operated by AS202734 and used to:
 
 **Full evidence: [`/looking glass/`](/looking%20glass/)**
 
+### Post-Incident Access Restriction
+
+On or around **July 4–5, 2026**, the operator of AS202734 added an access control form to `lg.tianshome.net`, requiring visitors to provide:
+
+- Email address
+- IP address (CIDR)
+- ASN(s)
+- Justification / intended use case
+
+**Context:**
+- The Looking Glass had been **fully public and accessible without restriction** during the entire investigation period (May–July 3, 2026)
+- **Internet Archive snapshot confirms the public state on July 3, 2026:**  
+  [`https://web.archive.org/web/20260703131435/http://lg.tianshome.net/`](https://web.archive.org/web/20260703131435/http://lg.tianshome.net/)
+- During this period, 29 queries were captured and archived in this repository. The queried targets include:
+  - North Korean IP space (`175.45.176.0/24`, Ryugyong-dong, Pyongyang)
+  - Chinese Academy of Sciences (`124.16.0.0/15`, CNIC-CAS)
+  - CERNET China Education and Research Network (`240a:a000::/20`, `2001:da8::/32`)
+  - CNNIC China Internet Network Information Center (`2400:dd00::/28`)
+  - Multiple multinational technology and industrial networks, including Cisco Systems, General Motors, Microsoft, and Google
+
+**Significance:**
+The access restriction was added shortly after the public archive of historical queries was published — suggesting the operator is aware of the visibility of their previous queries and is attempting to limit further observation.
+
 ---
 
 ## Multi-AS Attack Infrastructure
